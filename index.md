@@ -8,3 +8,7 @@ and other things we want to have easy access to.
 * [Manuals](./manuals/manuals.md)
 * [Drawings](./drawings/drawings.md)
 * [Code](./code/code.md)
+
+
+
+![](taskmap.jpg)
