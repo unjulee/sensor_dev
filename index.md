@@ -5,3 +5,6 @@ and other things we want to have easy access to.
 
 
 * [Logbook](./logs/week1/week1.md)
+* [Manuals](./manuals/manuals.md)
+* [Drawings](./drawings/drawings.md)
+* [Code](./code/code.md)
