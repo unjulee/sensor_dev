@@ -82,25 +82,25 @@ Something like this but problem with this is that it dims plus cannot turn on an
 Even better buy screwable waterproof disc shaped cases, make own led
 Waterproof phone case
 
-https://www.amazon.com/Universal-Waterproof-Case-JOTO-CellPhone/dp/B00LBK7QBY/ref=zg_bs_9375358011_17?_encoding=UTF8&psc=1&refRID=735SR4S8J1FAZNW8H38E#customerReviews 
-https://www.sparkfun.com/products/13902 
-https://www.sparkfun.com/products/11118
-
-https://www.sparkfun.com/products/11148
-https://www.sparkfun.com/products/13105
+* [Waterproof case](https://www.amazon.com/Universal-Waterproof-Case-JOTO-CellPhone/dp/B00LBK7QBY/ref=zg_bs_9375358011_17?_encoding=UTF8&psc=1&refRID=735SR4S8J1FAZNW8H38E#customerReviews )
+* [LED from Sparkfun](https://www.sparkfun.com/products/13902 )
+* [LED from Sparkfun](https://www.sparkfun.com/products/11118)
+* [LED from Sparkfun](https://www.sparkfun.com/products/11148)
+* [LED from Sparkfun](https://www.sparkfun.com/products/13105)
 
 Endoscope/Borescopes
-https://www.amazon.com/Depstech-Semi-rigid-Inspection-Waterproof-Adjustable/dp/B0749BQG1B/ref=cm_cr_arp_d_product_top?ie=UTF8
-Pros: micro USB, USB, USB-C
-Cons: can only dimmed? (possibly solved by covering up?)
-Resolution: 2.0 MP (1280 x 960)
-0.33inch/8.5mm diameter
-Semi-rigid (bendable, can hold its shape)
-https://www.amazon.com/Endoscope-Borescope-Waterproof-Inspection-Adjustable/dp/B01N19YCC3/ref=sr_1_6?ie=UTF8&qid=1517504365&sr=8-6&keywords=borescope+waterproof 50 ft, not rigid
-Pros: 
-Cons: “Due to the long cable length, the using experience with android phone is not very good, it will have image delay.”
-Resolution:1280x720
-0.33inch(8.5mm)
+* [Depstech Endoscope](https://www.amazon.com/Depstech-Semi-rigid-Inspection-Waterproof-Adjustable/dp/B0749BQG1B/ref=cm_cr_arp_d_product_top?ie=UTF8)
+        - **Pros**: micro USB, USB, USB-C
+        - **Cons**: can only dimmed? (possibly solved by covering up?)
+        - Resolution: 2.0 MP (1280 x 960)
+        - 0.33inch/8.5mm diameter
+        - Semi-rigid (bendable, can hold its shape)
+* [Endoscope other](https://www.amazon.com/Endoscope-Borescope-Waterproof-Inspection-Adjustable/dp/B01N19YCC3/ref=sr_1_6?ie=UTF8&qid=1517504365&sr=8-6&keywords=borescope+waterproof) 
+    - 50 ft, not rigid
+    - **Pros:** 
+    - **Cons:** “Due to the long cable length, the using experience with android phone is not very good, it will have image delay.”
+    - Resolution:1280x720
+    - 0.33inch(8.5mm)
 
 
 
