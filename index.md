@@ -21,7 +21,7 @@ The current members of this subteam are
 To learn more about the specifics of our subteam, please look through the tabs below.
 
 
-* [Logbook](./logs/week1/week1.md)
+* [Logbook](./logs/logs.md)
 * [Manuals](./manuals/manuals.md)
 * [Drawings](./drawings/drawings.md)
 * [Code](./code/code.md)
