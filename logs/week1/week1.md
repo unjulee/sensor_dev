@@ -90,11 +90,11 @@ Waterproof phone case
 
 Endoscope/Borescopes
 * [Depstech Endoscope](https://www.amazon.com/Depstech-Semi-rigid-Inspection-Waterproof-Adjustable/dp/B0749BQG1B/ref=cm_cr_arp_d_product_top?ie=UTF8)
-        - **Pros**: micro USB, USB, USB-C
-        - **Cons**: can only dimmed? (possibly solved by covering up?)
-        - Resolution: 2.0 MP (1280 x 960)
-        - 0.33inch/8.5mm diameter
-        - Semi-rigid (bendable, can hold its shape)
+    - **Pros**: micro USB, USB, USB-C
+    - **Cons**: can only dimmed? (possibly solved by covering up?)
+    - Resolution: 2.0 MP (1280 x 960)
+    - 0.33inch/8.5mm diameter
+    - Semi-rigid (bendable, can hold its shape)
 * [Endoscope other](https://www.amazon.com/Endoscope-Borescope-Waterproof-Inspection-Adjustable/dp/B01N19YCC3/ref=sr_1_6?ie=UTF8&qid=1517504365&sr=8-6&keywords=borescope+waterproof) 
     - 50 ft, not rigid
     - **Pros:** 
