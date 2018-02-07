@@ -12,7 +12,12 @@ the image values to concentrations, we can both get a visual of what is going on
 and determine using a threshold value where the sludge blanket begins.
 
 
-The current members of this subteam are Lois Lee (LL556), Srilekha Vangavolu (SV397), and Hannah Si (HS649).
+The current members of this subteam are 
+
+* Lois Lee (LL556) 
+* Srilekha Vangavolu (SV397)
+* Hannah Si (HS649)
+
 To learn more about the specifics of our subteam, please look through the tabs below.
 
 
