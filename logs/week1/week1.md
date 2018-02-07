@@ -19,14 +19,18 @@ the endoscope and LED
     - Best if LED is protected with waterproof cage that also holds a removable battery (waterproof phone case?)
 
 
-**HEIGHT:**
+* **HEIGHT:**
     - We can have a reel system with notches for a specific length of cord and in that way determine the height of the sludge blanket.
-**LED:**
+    
+    
+* **LED:**
     - Rubber outing
     - LED connected to battery with a switch/button
     - Keyboard idea: have rubber cover with button over actual button
     - battery
-**Program app:**
+    
+    
+* **Program app:**
     - Connecting the cameras.
     - Confluence camera tab
     - Image Processing
@@ -35,7 +39,9 @@ the endoscope and LED
     - Take multiple photos at each level
     - Translate images to grayscale and find average darkness per pixel
     - Average the 3 values and make a relation between the grayscale values and concentration.
-**UI**
+    
+    
+* **UI**
     - Kivy
     - Image from endoscope 
     - Need to connect app to usb connected endoscope
