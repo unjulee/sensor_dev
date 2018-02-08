@@ -6,6 +6,9 @@
 * **Wednesday**
   - Emailed Casey about Amazon order.
   - Hannah's meeting.
+* **Thursday**
+  - Tutorials and training.
+  - Work on the python one next week.
   
   
   
