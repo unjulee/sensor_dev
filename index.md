@@ -27,6 +27,8 @@ To learn more about the specifics of our subteam, please look through the tabs b
 * [Drawings](./drawings/drawings.md)
 * [Code](./code/code.md)
 
+![](taskmap.jpg)
+
 # The Components of the Submersible Sensor:
 
 Besides the programming component with the mobile/web application, 
@@ -41,4 +43,4 @@ The second component is an LED. The endoscope comes with LEDs of its own however
 reflect off the particles and change our readings, we need to dim the LEDs on the endoscope down and make an
 LED facing the endoscope, so that the silhouette of the particles shows and it'll be easier to read the image.
 
-![](taskmap.jpg)
+![](led.jpg)
