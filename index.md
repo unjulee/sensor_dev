@@ -29,7 +29,12 @@ To learn more about the specifics of our subteam, please look through the tabs b
 
 ![](taskmap.jpg)
 
-# The Components of the Submersible Sensor:
+# The Basics of the Submersible Sensor:
+
+The primary function of this submersible sensor is to give us real time footage of the particles suspended
+within the water and simultaneously provide us with accurate concentration readings so we can have a viewable
+and numerical understanding of what happens within the tanks. That being said the mobile application
+will utilize image processing to read concentration.
 
 Besides the programming component with the mobile/web application, 
 we also want to change some physical aspects regarding the endoscope/borescope.
