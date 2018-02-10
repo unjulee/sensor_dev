@@ -27,6 +27,18 @@ To learn more about the specifics of our subteam, please look through the tabs b
 * [Drawings](./drawings/drawings.md)
 * [Code](./code/code.md)
 
+# The Components of the Submersible Sensor:
 
+Besides the programming component with the mobile/web application, 
+we also want to change some physical aspects regarding the endoscope/borescope.
+This will have 2 parts to it. The first is a 3D printed casing to bend the endoscope camera 90 degrees. 
+The endoscope originally comes straight, so if we lower it down, 
+it will have a vertical view downwards of the tank. This will most likely disrupt the particles and 
+cause an inaccurate reading of the concentration. Thus we want to shift the camera
+so it faces horizontally.
+
+The second component is an LED. The endoscope comes with LEDs of its own however, because this light will
+reflect off the particles and change our readings, we need to dim the LEDs on the endoscope down and make an
+LED facing the endoscope, so that the silhouette of the particles shows and it'll be easier to read the image.
 
 ![](taskmap.jpg)
