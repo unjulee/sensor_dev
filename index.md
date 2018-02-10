@@ -29,5 +29,5 @@ To learn more about the specifics of our subteam, please look through the tabs b
 
 ![](taskmap.jpg)
 
-[](./components/components.md)
+Learn more about each of the [components](./components/components.md) of our sensor plan.
 
