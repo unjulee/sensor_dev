@@ -1,9 +1,9 @@
 # Components of the Sensor
 
 We will update each page about each component as time goes on:
-* [LED](/LED.md)
-* [Casing](/casing.md)
-* [application](/app.md)
+* [LED](LED.md)
+* [Casing](casing.md)
+* [application](app.md)
 
 # The basics:
 
