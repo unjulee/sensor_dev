@@ -1,5 +1,12 @@
 # Components of the Sensor
 
+We will update each page about each component as time goes on:
+* [LED](/LED.md)
+* [Casing](/casing.md)
+* [application](/app.md)
+
+# The basics:
+
 The primary function of this submersible sensor is to give us real time footage of the particles suspended
 within the water and simultaneously provide us with accurate concentration readings so we can have a viewable
 and numerical understanding of what happens within the tanks. That being said the mobile application
