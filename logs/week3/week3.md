@@ -28,3 +28,7 @@ void loop() {
   //threshold value to compare to light up LED
 }
 ```
+
+**Displays**
+  * We are talking about different displays to display the numerical value. 
+  Hannah found a great display that's very affordable.
