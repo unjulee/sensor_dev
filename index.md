@@ -69,7 +69,7 @@ void setup() {
   }
   else if(digitalRead(button_input) == HIGH){     //whole thing could possibly be moved into loop()
     offset = analogRead(turb_input);
-    Serial.println("this is the offset value");
+    Serial.println("this is the offset value");   //but then get rid of flag=0
     Serial.print(offset);
     delay(500);
     flag = 1;
@@ -98,7 +98,7 @@ void loop() {
   
     //threshold value to compare to light up LED
     if (turbidity > threshold){
-      analogWrite(turb_input, HIGH);
+      digitalWrite(ledPin, HIGH);
       Serial.println("YOU ARE NOW IN THE SLUDGE BLANKET");
     }
       
@@ -106,6 +106,7 @@ void loop() {
   }
 }
 
+  
 
 ```
 
