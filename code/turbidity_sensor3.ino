@@ -8,6 +8,7 @@ int ledPin = 13;  //declaration for LED
 int button_input = 11;   //digital input of the pushbutton
 int offset = 0;  //set the offset as zero for now
 int turb_input = A0; //input in A0 from sensor
+int flag = 0; //if flag is 1, start loop
 
 void setup() {
   //SETUP
@@ -26,20 +27,21 @@ void setup() {
   
   //PUSHBUTTON
   //set it up with a push button
-  if (digitalRead(button_input)=LOW){
-    stop();
+  if (digitalRead(button_input)==LOW){ //don't remember if pushbutton high or low when pressed
+    flag = 0;
   }
-  else if(digitalRead(button_input)=HIGH){
+  else if(digitalRead(button_input) == HIGH){
+    flag = 1;
     offset = analogRead(turb_input);
     Serial.println("this is the offset value");
     Serial.print(offset);
   }
   }
-}
+
 
 void loop() {
 
-  if (digitalRead(button_input)=LOW){
+  if (flag == 1){
     int sensorValue = analogRead(A0);// read the input on A0:
 
     // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
