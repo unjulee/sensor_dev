@@ -29,6 +29,14 @@ To learn more about the specifics of our subteam, please look through the tabs b
 
 ![](taskmap.jpg)
 
+## Current Tasks
+
+  - Work on testing the turbidity sensor using arduino and code
+  - Adjust the relation as necessary
+  - Play around with endoscope, maybe start to write pseudocode.
+  - Make larger container with matte dark walls and bottom.
+  
+
 Learn more about each of the [components](./components/components.md) of our sensor plan.
 
 Our code right now:
