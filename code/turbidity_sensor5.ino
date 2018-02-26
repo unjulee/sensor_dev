@@ -4,21 +4,24 @@
  * and translate it into a numerical value for turbidity
  */
 
-int ledPin = 13;  //declaration for LED
-int button_input = 11;   //digital input of the pushbutton
-int offset = 0;  //set the offset as zero for now
-int turb_input = A0; //input in A0 from sensor
-int flag = 0; //if flag is 1, start loop
-float turbidity=0.0;//turbidity
+//global variables
 
-int threshold = 2000; // threshold turbidity forsludge blanket
+int ledPin = 13;          //declaration for LED
+int button = 11;          //digital input of the pushbutton
+int offset = 0;           //set the offset as zero for now
+int turb_input = A0;      //input in A0 from sensor
+int flag = 0;             //if flag is 1, start loop
 
+float turbidity = 0.0;    //turbidity
+int threshold = 2500;     //threshold turbidity for sludge blanket
+
+//setup
 void setup() {
-  //SETUP
-  Serial.begin(9600); //Baud rate: 9600 
-  pinMode(ledPin, OUTPUT);  //This is to set up the LED
-  pinMode(turb_input, INPUT);  //This is to set up the turbidity input from sensor
-  pinMode(button_input, INPUT);  //This is to set up the input from pushbutton
+  
+  Serial.begin(9600);           //Baud rate: 9600 
+  pinMode(ledPin, OUTPUT);      //This is to set up the LED
+  pinMode(turb_input, INPUT);   //This is to set up the turbidity input from sensor
+  pinMode(button, INPUT);       //This is to set up the input from pushbutton
 
   //CALIBRATION   
   //set up so that the difference between the clear water turbidity
@@ -30,10 +33,13 @@ void setup() {
   
   //PUSHBUTTON
   //set it up with a push button
-  if (digitalRead(button_input)==LOW){ //don't remember if pushbutton high or low when pressed
+  if (digitalRead(button)==LOW){ 
+    //don't remember if pushbutton high or low when pressed
     flag = 0;
   }
-  else if(digitalRead(button_input) == HIGH){     //whole thing could possibly be moved into loop()
+  
+  else if(digitalRead(button) == HIGH){     
+    //whole thing could possibly be moved into loop()
     offset = analogRead(turb_input);
     Serial.println('\n');
     Serial.print("this is the offset value:");   //but then get rid of flag=0
@@ -62,12 +68,19 @@ void loop() {
 
     // Convert voltage to turbidity
     // relation from page is -1120.4x^2 +5742.3x-4352.9
-    if (voltage>2.5){
-      turbidity = ((voltage*voltage)*(-1120.4))+(voltage*5742.3)-4352.9-(offset);
+    // only supports voltages of 2.5-4.2 for the relation
+    
+    if (voltage > 2.5 && voltage < 4.2){
+      //this relation needs to be fixed as well 
+      //this fixes the problem with the negative numbers
+      turbidity = (voltage*voltage*(-1120.4))+(voltage*5742.3)-4352.9-(offset);
     }
-    if (voltage<2.5){
-      turbidity=3000;
-   }
+    else if (voltage < 2.5){
+      turbidity = 3000;
+    }
+    else if (voltage > 4.2){
+      turbidity = 0;
+    }
 
       Serial.print("this is the turbidity reading:");
       Serial.println(turbidity); // print out the value you read:
@@ -77,8 +90,9 @@ void loop() {
     if (turbidity > threshold){
       digitalWrite(ledPin, HIGH);
       Serial.println("YOU ARE NOW IN THE SLUDGE BLANKET");
-   // }
-      
+    
+    
+    // }  
     //later add breadboard stuff with display
   }
 }
