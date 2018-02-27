@@ -9,3 +9,10 @@ We've also got our hands on an arduino add on board which could allow us to use 
 We got ourselves two pushbuttons from this board but we may need more?
 
 Also we may not need the pushbutton yet, we can just use the reset button and have it determine the offset when we reset manually.
+
+
+
+THINGS TO DO/ASK:
+
+Is the floc hopper tube smooth?
+Also since it's slanted how exactly we are measuring sludge blanket height.
