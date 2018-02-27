@@ -17,3 +17,9 @@ THINGS TO DO/ASK:
 Is the floc hopper tube smooth?
 Also since it's slanted how exactly we are measuring sludge blanket height.
 Ask about dark colored sediments
+
+
+Tasks for next time:
+Waterproofing turbidity sensor
+Making testing tube (kind of deep)
+Once we finish tube start experimenting with borescope.
