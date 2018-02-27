@@ -10,7 +10,7 @@ We got ourselves two pushbuttons from this board but we may need more?
 
 Also we may not need the pushbutton yet, we can just use the reset button and have it determine the offset when we reset manually.
 
-
+![](turb.jpg)
 
 THINGS TO DO/ASK:
 
