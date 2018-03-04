@@ -5,11 +5,13 @@
 ## Abstract
 //Briefly summarize your previous work, goals and objectives, what you have accomplished, and future work. (100 words max)
 
-The goal of the Sensor Development subteam is to create sensors to help monitor the quality of water at certain stages of the water treatment process. In particular the team has been working on a concentration and turbidity sensor for the last few semesters, beginning with a concentration sensor developed using a photosensor for in-lab usage and now with concentration sensors for use in the field.
+The goal of the Sensor Development subteam is to create sensors to help monitor the quality of water at certain stages of the water treatment process. In particular the team has been working on a concentration and turbidity sensor for the last few semesters, beginning with a fluidized bed solids detector developed for in-lab usage and now with submersible solids detectors for use in the field. The submersible solids detector is the main focus of the team this semester. Two different approaches, image processing and using a turbidity sensor, will be used and compared to measure the height of the sludge blanket within the tanks.
 
 
 ## Introduction
-Explain how the completion of your challenge will affect AguaClara and the mission of providing safe drinking water (or sustainable wastewater treatment!). If this is a continuing team, how will your contribution build upon previous research? What needs to be further discovered or defined? If this is a new team, what prompted the inclusion of this team?
+//Explain how the completion of your challenge will affect AguaClara and the mission of providing safe drinking water (or sustainable wastewater treatment!). If this is a continuing team, how will your contribution build upon previous research? What needs to be further discovered or defined? If this is a new team, what prompted the inclusion of this team?
+
+In order to monitor the processes and gain more information on the 
 
 ## Literature Review and Previous Work
 Discuss what is already known about your research area based on both external work and that of past AguaClara Teams. Connect your objectives with what is already known and explain what additional contribution you intend to make. Make sure to add APA formatted in-text citations. If you mention the author(s) in your sentence, you can simply give the year of publication.[(Logan et. al. 1987)](http://www.jstor.org/stable/pdf/25043431.pdf?acceptTC=true)
