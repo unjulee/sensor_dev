@@ -3,7 +3,10 @@
 #### March 4, 2018
 
 ## Abstract
-Briefly summarize your previous work, goals and objectives, what you have accomplished, and future work. (100 words max)
+//Briefly summarize your previous work, goals and objectives, what you have accomplished, and future work. (100 words max)
+
+The goal of the Sensor Development subteam is to create sensors to help monitor the quality of water at certain stages of the water treatment process. In particular the team has been working on a concentration and turbidity sensor for the last few semesters, beginning with a concentration sensor developed using a photosensor for in-lab usage and now with concentration sensors for use in the field.
+
 
 ## Introduction
 Explain how the completion of your challenge will affect AguaClara and the mission of providing safe drinking water (or sustainable wastewater treatment!). If this is a continuing team, how will your contribution build upon previous research? What needs to be further discovered or defined? If this is a new team, what prompted the inclusion of this team?
