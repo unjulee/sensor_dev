@@ -11,7 +11,12 @@ The goal of the Sensor Development subteam is to create sensors to help monitor 
 ## Introduction
 //Explain how the completion of your challenge will affect AguaClara and the mission of providing safe drinking water (or sustainable wastewater treatment!). If this is a continuing team, how will your contribution build upon previous research? What needs to be further discovered or defined? If this is a new team, what prompted the inclusion of this team?
 
-In order to monitor the processes and gain more information on the 
+The Sensor Development subteam was originally created to improve the efficiency of the Anaerobic Fluidized Bed (AFB) Reactor
+and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. The subteam started off by developing a fluidized
+bed solids concentration sensor to measure clay particle concentrations in the high rate sedimentation
+(HRS) process, and then upon completion of that project, progressed to working on a submersible solids concentration sensor designed to measure the height of the sludge blanket in the sedimentation tank. The Fall 2017 subteam worked on modifying and optimizing the fluidized bed solids concentration sensor by using different designs to eliminate problems that surfaced in the previous iterations. 
+
+This semester, the subteam is working on two different designs of the submersible sensor. The primary design uses an endoscope/borescope connected to a smartphone to take images within the tanks. Using image processing techniques, we will create a relation between the greyscaled image and concentration and make it a user-friendly experience using a mobile application through Java programming. The secondary design uses a turbidity sensor connected to an arduino that would be programmed using C to read the analog value from the sensor and convert it to a numerical turbidity. The user would be able to manipulate the sensor through buttons and a digital display or screen. 
 
 ## Literature Review and Previous Work
 Discuss what is already known about your research area based on both external work and that of past AguaClara Teams. Connect your objectives with what is already known and explain what additional contribution you intend to make. Make sure to add APA formatted in-text citations. If you mention the author(s) in your sentence, you can simply give the year of publication.[(Logan et. al. 1987)](http://www.jstor.org/stable/pdf/25043431.pdf?acceptTC=true)
