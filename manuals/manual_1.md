@@ -27,6 +27,9 @@ Explain the techniques you have used to acquire additional data and insights. Re
 
 Below, some example sections are given. Sectioning the report is meant to keep similar information together.  Continue making sections as necessary, or delete sections if you do not need them. Feel free to add subsubsections to further delineate the information. For example, under the Experimental Apparatus section below, the EStaRS team might consider having sections such as "Filter Design" and "Filter Fabrication".
 
+
+Here we can talk about greyscale, openCV, also the relation from the turbidity sensor thing and how its not entirely accurate so we need to develop our own, how we dealt with offset etc, etc...
+
 ### Experimental Apparatus
 Explain your apparatus setup using enough detail such that future teams can recreate your apparatus. Make sure to explain why you built it this way.
 * Design (calculations, constraints)
@@ -43,6 +46,8 @@ Explain your apparatus setup using enough detail such that future teams can recr
 
 ### Procedure
 Discuss your experimental procedure. How did you run your experiment? What were you testing? What were the values of relevant parameters?
+
+We haven't started testing yet but I'll add about the turbidity sensor relation and how we need to develop our own by coming up with a relation from analog values to a numerical turbidity value. We are going to put in varying turbidity values and see how the analog value relates
 
 ## Results and Analysis
 Present an observation (results), then explain what happened (analysis).  Each paragraph should focus on one aspect of your results. In that same paragraph, you should interpret that result.  
