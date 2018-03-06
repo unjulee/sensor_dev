@@ -3,21 +3,19 @@
 #### March 4, 2018
 
 ## Abstract
-//Briefly summarize your previous work, goals and objectives, what you have accomplished, and future work. (100 words max)
+<!-- Briefly summarize your previous work, goals and objectives, what you have accomplished, and future work. (100 words max) -->
 
-The goal of the Sensor Development subteam is to create sensors to help monitor the quality of water at certain stages of the water treatment process. In particular the team has been working on a concentration and turbidity sensor for the last few semesters, beginning with a fluidized bed solids detector developed for in-lab usage and now with submersible solids detectors for use in the field. The submersible solids detector is the main focus of the team this semester. Two different approaches, image processing and using a turbidity sensor, will be used and compared to measure the height of the sludge blanket within the tanks.
+The goal of the Sensor Development subteam is to create sensors that help monitor water quality at certain stages of the water treatment process. In particular, the team has been working on a particle concentration and turbidity sensor for the last few semesters, beginning with a fluidized bed solids detector developed for in-lab use and now  submersible solids detectors for field use. The submersible solids detector is the main focus for the team this semester. Two different sensors, a borescope and a prefabricated turbidity sensor, will be implemented and compared to measure the height of the sludge blanket in the sedimentation tanks.
 
+**Question: Are we actually going for concentration or turbidity?**
 
 ## Introduction
-//Explain how the completion of your challenge will affect AguaClara and the mission of providing safe drinking water (or sustainable wastewater treatment!). If this is a continuing team, how will your contribution build upon previous research? What needs to be further discovered or defined? If this is a new team, what prompted the inclusion of this team?
+<!--Explain how the completion of your challenge will affect AguaClara and the mission of providing safe drinking water (or sustainable wastewater treatment!). If this is a continuing team, how will your contribution build upon previous research? What needs to be further discovered or defined? If this is a new team, what prompted the inclusion of this team? -->
 
-The Sensor Development subteam was originally created to improve the efficiency of the Anaerobic Fluidized Bed (AFB) Reactor
-and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. The subteam started off by developing a fluidized
-bed solids concentration sensor to measure clay particle concentrations in the high rate sedimentation
-(HRS) process, and then upon completion of that project, progressed to working on a submersible solids concentration sensor designed to measure the height of the sludge blanket in the sedimentation tank. The Fall 2017 subteam worked on modifying and optimizing the fluidized bed solids concentration sensor by using different designs to eliminate problems that surfaced in the previous iterations. 
+The Sensor Development subteam was created to improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. The subteam first developed a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process. Upon completion, the subteam progressed to build a submersible solids concentration sensor to measure the height of the sludge blanket in the sedimentation tank. In the fall of 2017, the focus was on modifying and optimizing the fluidized bed solids concentration sensor.
 
-This semester, the subteam is working on two different designs of the submersible sensor. The primary design uses an endoscope/borescope connected to a smartphone to take images within the tanks. Using image processing techniques, we will create a relation between the greyscaled image and concentration and make it a user-friendly experience using a mobile application through Java programming. The secondary design uses a turbidity sensor connected to an arduino that would be programmed using C to read the analog value from the sensor and convert it to a numerical turbidity. The user would be able to manipulate the sensor through buttons and a digital display or screen. 
-_______________________-------------------------_____________
+This semester, the Sensor Development subteam is implementing two different designs for a submersible concentration sensor. The primary design features an endoscope, also known as a borescope, tethered to a smartphone. As the borescope captures images of the fluid at increasing depths, an application on the smartphone will process the scattering of light in the images to determine a turbidity gradient. In the second design, a turbidity sensor is connected to an Arduino board, which will convert the outputs to values of turbidity and display them on a digital screen. The sensor will also include buttons for calibration and other user interaction.
+
 
 # Manual
 The goal of this section is to provide all of the guidance that would be necessary for a future team to pick up your work where you left off. Please try to be thorough and put yourselves in the shoes of a newcomer to the project. Below are some recommended sections, but the manual will likely take a slightly different form for each team.
@@ -83,5 +81,3 @@ When using this template keep in mind that this serves three purposes. The first
 # To convert the document from markdown to pdf
 pandoc Name_of_this_file.md -o TeamName_Research_Report.pdf
 ```
-
-
