@@ -37,16 +37,24 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
 
    The application collects live images taken by the endoscope, processes them for average greyscale value, and calculates the turbidity of the fluid in the image. This calculation considers the the correlation between relative reduction of light reflection (compared to in clear fluid) and turbidity, as well as reflection of light by the solids themselves and other complicating factors whose influence must be empirically determined (see Endoscope).
 
-   The mobile application will also provide a user-friendly interface, prompting the user to lower the endoscope to increasing depths and displaying the captured images and calculated turbidity at each depth. The application will also record each calculation to profile the change in turbidity as the endoscope nears the sludge blanket at the bottom of the sedimentation tank. This gradient will be presented visually, as well as used to 
+   The mobile application will also provide a user-friendly interface, prompting the user to lower the endoscope to greater depths and displaying the captured images and calculated turbidity at each depth. In addition, it will record each calculation to profile the increase in turbidity as the endoscope nears the sludge blanket at the bottom of the sedimentation tank. The gradient will be presented visually, as well as used to signal to the user when the endoscope has reached the sludge blanket.
 
 [comment]: <> (, so that the images may be processed to determine the fluid's turbidity at those depths. These turbidity values, by definition, should increase with the concentration of suspended solids.)
 
-[TO DO]: <> (move stuff that sounds less like purpose and more like implementation to Fabrication Details)
+[TO DO]: <> (move stuff that sounds less like purpose and more like implementation to Fabrication)
 
-**Microcontroller Interfaced Analog (MIA) Turbidity Sensor**
+**Microcontroller-Interfaced Analog (MIA) Turbidity Sensor** <br/>
+The microcontroller-interfaced analog turbidity sensor also encompasses three main physical components: 1) the analog turbidity sensor, 2) a marked reel, and 3) a microcontroller, such as an Arduino, programmed to convert and displays data from the endoscope and interact with the user.
+
+1. Analog Turbidity sensor <br/>
+
+2. Marked Reel <br/>
+   Similar to the reel system for the MAPE turbidity sensor, this marked reel allows the user to lower the analog turbidity sensor into the sedimentation tank at a controlled rate and to a known depth. It will indicate along its perimeter the relative length of the endoscope cable that has been unreeled. The cable need not be semi-rigid and therefore may not need a guiding channel. In addition, a clamp will be attached to the reel for securing the entire apparatus to the top of the sedimentation tank.
+
+3. Microcontroller (Arduino)<br/>
 
 
-## Fabrication Details
+## Fabrication
 <!-- Include any information related to the fabrication of equipment, experimental apparatuses, or technologies. Include the purpose of each step and the fabrication methods used. Reference appropriate safety precautions. -->
 
 
