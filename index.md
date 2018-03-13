@@ -27,6 +27,12 @@ To learn more about the specifics of our subteam, please look through the tabs b
 * [Drawings](./drawings/drawings.md)
 * [Code](./code/code.md)
 
+
+
+## Srilekha's CAD rendering of the MAPE design.
+![MAPE extension cage](/drawings/MAPE_2018-Mar-10_11-59-06PM-000_CustomizedView19818279152.png) 
+
+
 ![](taskmap.jpg)
 
 ## Current Tasks
@@ -38,6 +44,7 @@ To learn more about the specifics of our subteam, please look through the tabs b
   
 
 Learn more about each of the [components](./components/components.md) of our sensor plan.
+
 
 
 
