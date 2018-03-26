@@ -2,18 +2,37 @@
 #### Lois Lee, Srilekha Vangavolu, Hannah Si
 #### March 9, 2018
 
-<!--Table of contents-->
+<div class="alert alert-block alert-danger">
+Please do not delete my comments. On the next submission I will use them to see if the issues were addressed and then I will delete them. If you disagree with a comment, just add your own underneath it.
+</div>
 
 ## Abstract
 
 The goal of the Sensor Development subteam is to create sensors that help monitor water quality during the water treatment process. In particular, the team has been working on a particle concentration and turbidity sensor for the last few semesters, beginning with a fluidized bed solids detector developed for in-lab use and now a submersible solids detector for field use. The submersible solids detector is the main focus for the team this semester. Two different designs based on an endoscope and a pre-developed turbidity sensor will be tested to measure the height of the sludge blanket in the sedimentation tanks.
 
+<div class="alert alert-block alert-danger">
+Just add in why this technology is important.
+</div>
 
 ## Introduction
 
 The Sensor Development subteam was created to improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. The subteam first developed a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process. Upon completion, the subteam progressed to build a submersible solids concentration sensor to measure the height of the sludge blanket in the sedimentation tank. In the fall of 2017, the focus was on refining the fluidized bed solids concentration sensor.
 
+<div class="alert alert-block alert-danger">
+Confusing to mention goal of helping wastewater treatment and then say that the first design wen to help HRS, which is a drinking water treatment.
+
+What semester fif the sensor to measure the height of the sludge blanket?
+
+What is the fluidized bed solids concentration sensor purpose and did they suceed in making one?
+</div>
+
 This semester, the Sensor Development subteam is implementing two new designs for a submersible solids concentration, or turbidity, sensor. The primary design features an endoscope and visual processing in a mobile application. In the second design, a pre-developed analog turbidity sensor is interfaced with through a microcontroller. The end goal of both designs is to provide the treatment plant users and members of other subteams with a more affordable, easily used and maintained, and instantaneous method of not only determining the height of the sludge blanket, but also measuring the turbidity of the sedimentation tank fluid at varying depths.
+
+<div class="alert alert-block alert-danger">
+Watch run-on sentences
+
+Why are you pursuing two different design ideas?
+</div>
 
 # Manual
 
@@ -25,10 +44,18 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
 1. Endoscope <br/>
    An endoscope is a type of borescope, an optical instrument that is typically slender, illuminated by built in lights, and attached to a long cable, making it suited to viewing inside otherwise inaccessible places. An endoscope specifically was chosen for this turbidity sensor for its small size, accuracy, water resistance, and device compatibility. <br/>
 
+   <div class="alert alert-block alert-danger">
+   What endoscope did you choose? Where did you get it from? Do you have a photo?
+   </div>
+
    The role of the endoscope is to capture images of the sedimentation tank fluid at certain depths. The images will be lit by its light source, a ring of LED lights around the camera lens. To restrict its view to such depths, the endoscope is accompanied by a non-reflective material, such as matte black rubber, fixed no more than an inch in front of its lens. The turbidity of the fluid is thus measured by intensity of light reflected back to the endoscope due to the presence of suspended solids. In fluid of low solids concentration, the endoscope should detect minimal reflection of light.
 
 2. Marked Reel <br/>
    The marked reel allows the user to lower the endoscope into the sedimentation tank at a controlled rate and to a known depth. It will indicate along its perimeter the relative length of the endoscope cable that has been unreeled. Because the endoscope has a semi-rigid cable, the reel must also have a guiding channel for wrapping the cable around a cylinder as it is reeled and straightening the cable as it is unreeled. Lastly, a clamp will be attached to the reel for securing the entire apparatus to the top of the sedimentation tank.
+
+   <div class="alert alert-block alert-danger">
+   Where do we get these from?
+   </div>
 
 3. Mobile Device and Application <br/>
    The mobile device is a smartphone or tablet computer provided by the user. It connects to the endoscope by a USB-C, USB, or Micro USB connection and runs the mobile application.
@@ -37,6 +64,9 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
 
    The mobile application will also provide a user-friendly interface, directing the user in calibrating the sensor, prompting the user to lower the endoscope to greater depths, and displaying the captured images and calculated turbidity at each depth. In addition, it will record each calculation to profile the increase in turbidity as the endoscope nears the sludge blanket at the bottom of the sedimentation tank. The turbidity gradient, which will also be presented visually, will serve as a guide in determining the height of the sludge blanket.
 
+   <div class="alert alert-block alert-danger">
+   Did your team create this application? If not include the source of where it comes from.
+   </div>
 
 **Microcontroller-Interfaced Analog (MIA) Turbidity Sensor** <br/>
 The microcontroller-interfaced analog turbidity sensor also encompasses three main physical components: 1) the analog turbidity sensor, 2) a marked reel, and 3) a microcontroller, such as an Arduino, programmed to convert and displays data from the endoscope and interact with the user.
@@ -44,12 +74,23 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 1. Analog Turbidity sensor <br/>
    The analog turbidity sensor is a pre-developed sensor with an adaptor board for either analog or digital output. The analog output, after adjustment by the adaptor's potentiometer, is input into the microcontroller to be converted to a numerical turbidity value.
 
+   <div class="alert alert-block alert-danger">
+   Use consistent capitalization in headers
+
+   Where do you get the analog turbidity sensor?
+   </div>
+
 2. Marked Reel <br/>
    Similar to the reel system for the MAPE turbidity sensor, this marked reel allows the user to lower the analog turbidity sensor into the sedimentation tank at a controlled rate and to a known depth. It will indicate along its perimeter the relative length of the endoscope cable that has been unreeled. The cable need not be semi-rigid and therefore may not need a guiding channel. In addition, a clamp will be attached to the reel for securing the entire apparatus to the top of the sedimentation tank.
 
 3. Microcontroller <br/>
    The microcontroller we are using is the Arduino Uno. The Arduino will read the output from the analog turbidity sensor and convert that value into a turbidity reading. The developers of the sensor have published a tentative relation; however, further testing must be done to prove the validity of the relation. If the readings do not correlate to accurate turbidity, we may have to empirically develop a relation of our own. The microcontroller will also feature a digital display for the turbidity reading and a pushbutton for calibrating the sensor in clear fluid.
 
+   <div class="alert alert-block alert-danger">
+   Where do you get these things and do you have photos of them? For people reading this for the first time, a photo really helped understanding and visualization.
+
+   What are the pros and cons for each of these? Why are you pursuing two different designs? Which one is better?
+   </div>
 
 ## Fabrication
 
@@ -58,6 +99,10 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 
 ![MAPE extension cage](/drawings/MAPE_2018-Mar-10_11-59-06PM-000_CustomizedView19818279152.png) <br/>
 
+<div class="alert alert-block alert-danger">
+Label all figures/photos with numebrs and a caption and then refer to them by their figure number in the report text.
+</div>
+
 <br/>
 
 **Fabrication for the MIA Turbidity Sensor** <br/>
@@ -65,9 +110,16 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 
    We plan to fabricate a case for the microcontroller for protection and easy handling and for holding the digital display. It will also include a rubber button connected to a pushbutton on the microcontroller to allow the user to calibrate the sensor.
 
-  \--------------   
+   <div class="alert alert-block alert-danger">
+   Any photos to include?
+   </div>
+
+  \--------------
    The reel system for both sensors has not been fully developed yet. We plan to fabricate a rotating cylinder with a handle that will allow for easy manipulation of the sensor height.
 
+   <div class="alert alert-block alert-danger">
+   Do you have a diagram of what this may look like?
+   </div>
 
 ## Special Components
 
@@ -81,6 +133,9 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 **Arduino Uno**  </br>
    The Arduino Uno can be purchased through the [Arduino website](https://www.arduino.cc/). The Arduino IDE is also available [here](https://www.arduino.cc/en/Main/Software) for free.
 
+   <div class="alert alert-block alert-danger">
+   I see that you have ordering information down here, which is fantastic. Consider moving this info into those sections instead of putting it here, but otherwise ignore my earlier comments about where to purchase the materials.
+   </div>
 
 ## Experimental Methods
 
@@ -139,19 +194,19 @@ void setup() {
   pinMode(turb_input, INPUT);   //This is to set up the turbidity input from sensor
   pinMode(button, INPUT);       //This is to set up the input from pushbutton
 
-  //CALIBRATION   
+  //CALIBRATION
   Serial.println('\n');
-  Serial.println("Please calibrate the sensor by pressing the button");  
+  Serial.println("Please calibrate the sensor by pressing the button");
 
   //PUSHBUTTON
   if (digitalRead(button)==LOW){
     flag = 0;
   }
 
-  else if(digitalRead(button) == HIGH){     
+  else if(digitalRead(button) == HIGH){
     offset = analogRead(turb_input);
     Serial.println('\n');
-    Serial.print("this is the offset value:");  
+    Serial.print("this is the offset value:");
     Serial.println(offset);
     delay(500);
     flag = 1;
@@ -200,6 +255,9 @@ void loop() {
   }
 ```
 
+<div class="alert alert-block alert-danger">
+Consider adding in example results from this check. It is hard to understand the code by itself.
+</div>
 
 ```python
 # To convert the document from markdown to pdf
