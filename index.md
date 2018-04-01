@@ -37,10 +37,8 @@ To learn more about the specifics of our subteam, please look through the tabs b
 
 ## Current Tasks
 
-  - Work on testing the turbidity sensor using arduino and code
-  - Adjust the relation as necessary
-  - Play around with endoscope, maybe start to write pseudocode.
-  - Make larger container with matte dark walls and bottom.
+  - Currently working on fabrication of an expandable system for MAPE design.
+  - Working on finding an endoscope that is flexible enough.
   
 
 Learn more about each of the [components](./components/components.md) of our sensor plan.
