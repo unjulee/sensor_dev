@@ -8,7 +8,7 @@ Please do not delete my comments. On the next submission I will use them to see 
 
 ## Abstract
 
-The goal of the Sensor Development subteam is to create sensors that help monitor water quality during the water treatment process. In particular, the team has been working on a particle concentration and turbidity sensor for the last few semesters, beginning with a fluidized bed solids detector developed for in-lab use and now a submersible solids detector for field use. The submersible solids detector is the main focus for the team this semester. Two different designs based on an endoscope and a pre-developed turbidity sensor will be tested to measure the height of the sludge blanket in the sedimentation tanks.
+The goal of the Sensor Development subteam is to create sensors that help monitor water quality during the water treatment process. In particular, the subteam has been working on particle concentration and turbidity sensors for the last few semesters, beginning with a fluidized bed solids detector developed for in-lab experiments conducted in transparent tubing, and afterward a submersible solids detector for field use in less visible and reachable sedimentation tanks. Currently in the field, turbidity is most often and affordably measured by turbidimeters that require fluid samples. Thus, this semester, the Sensor Development subteam is redesigning a submersible solids detector that is simpler and more usable than before, with a goal of affordably providing real-time/in-situ, accurate measurements of particle concentration or turbidity in the sedimentation tanks. Two designs, one using an endoscope and the other a pre-developed turbidity sensor, will be tested to measure the height of the sludge blanket in the sedimentation tanks.
 
 <div class="alert alert-block alert-danger">
 Just add in why this technology is important.
@@ -16,7 +16,8 @@ Just add in why this technology is important.
 
 ## Introduction
 
-The Sensor Development subteam was created to improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. The subteam first developed a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process. Upon completion, the subteam progressed to build a submersible solids concentration sensor to measure the height of the sludge blanket in the sedimentation tank. In the fall of 2017, the focus was on refining the fluidized bed solids concentration sensor.
+The general goal of the Sensor Development subteam is to monitor different processes during the water treatment process. In the beginning, the Sensor Development team was created to work on a sensor to improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. Subsequently, the subteam moved on to develop a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process. Last semester's team worked on refining the fluidized bed solids concentration sensor and successfully finished developing a working sensor. Now that we have completed the sensor for HRS, the subteam has currently progressed to building a submersible solids concentration sensor to measure the height of the sludge blanket in the sedimentation tank. 
+
 
 <div class="alert alert-block alert-danger">
 Confusing to mention goal of helping wastewater treatment and then say that the first design wen to help HRS, which is a drinking water treatment.
@@ -26,7 +27,7 @@ What semester fif the sensor to measure the height of the sludge blanket?
 What is the fluidized bed solids concentration sensor purpose and did they suceed in making one?
 </div>
 
-This semester, the Sensor Development subteam is implementing two new designs for a submersible solids concentration, or turbidity, sensor. The primary design features an endoscope and visual processing in a mobile application. In the second design, a pre-developed analog turbidity sensor is interfaced with through a microcontroller. The end goal of both designs is to provide the treatment plant users and members of other subteams with a more affordable, easily used and maintained, and instantaneous method of not only determining the height of the sludge blanket, but also measuring the turbidity of the sedimentation tank fluid at varying depths.
+This semester, the Sensor Development subteam is implementing two new designs for a submersible solids concentration, or turbidity sensor based on the two ideas provided to us by our advisor and by other recommendations from Aguaclara members. The primary design features an endoscope and visual processing in a mobile application which will provide a more intuitive user interface. In the second design, a pre-developed analog turbidity sensor is interfaced with a microcontroller which is easier and cheaper to implement but has a difficult user-interface. The end goal of both designs is to provide the treatment plant users and members of other subteams with a more affordable, easily used and maintained, and instantaneous method of not only determining the height of the sludge blanket, but also measuring the turbidity of the sedimentation tank fluid at varying depths.
 
 <div class="alert alert-block alert-danger">
 Watch run-on sentences
@@ -50,11 +51,16 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
 
    The role of the endoscope is to capture images of the sedimentation tank fluid at certain depths. The images will be lit by its light source, a ring of LED lights around the camera lens. To restrict its view to such depths, the endoscope is accompanied by a non-reflective material, such as matte black rubber, fixed no more than an inch in front of its lens. The turbidity of the fluid is thus measured by intensity of light reflected back to the endoscope due to the presence of suspended solids. In fluid of low solids concentration, the endoscope should detect minimal reflection of light.
 
-2. Marked Reel <br/>
-   The marked reel allows the user to lower the endoscope into the sedimentation tank at a controlled rate and to a known depth. It will indicate along its perimeter the relative length of the endoscope cable that has been unreeled. Because the endoscope has a semi-rigid cable, the reel must also have a guiding channel for wrapping the cable around a cylinder as it is reeled and straightening the cable as it is unreeled. Lastly, a clamp will be attached to the reel for securing the entire apparatus to the top of the sedimentation tank.
+2. Expandable Ruler System <br/>
+
+   Instead of using a marked reel, we’ve decided to use an expandable ruler system that we would fabricate in lab. This system would consist of multiple 20 cm long panels marked with heights. These panels would be  connected by double hinges. The endoscope wiring would run along the side through a series of loops to keep the wiring in place. In order to lower the endoscope down, we would release panel by panel until the endoscope has reached the sludge blanket. Then we could read the height off of the panels. The benefits of this expandable system is that it would be easy to expand and collapse, making it ideal for transport. The panels would also provide a rigid backing so that the endoscope wire, which is semi-rigid, would go into the water at a 90 degree angle and provide us with a more accurate reading.
+
+   **Have diagram here**
 
    <div class="alert alert-block alert-danger">
    Where do we get these from?
+
+   Our comment: We've decided not to use the marked reel anymore and we're pursuing a new design!
    </div>
 
 3. Mobile Device and Application <br/>
@@ -81,7 +87,7 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
    </div>
 
 2. Marked Reel <br/>
-   Similar to the reel system for the MAPE turbidity sensor, this marked reel allows the user to lower the analog turbidity sensor into the sedimentation tank at a controlled rate and to a known depth. It will indicate along its perimeter the relative length of the endoscope cable that has been unreeled. The cable need not be semi-rigid and therefore may not need a guiding channel. In addition, a clamp will be attached to the reel for securing the entire apparatus to the top of the sedimentation tank.
+
 
 3. Microcontroller <br/>
    The microcontroller we are using is the Arduino Uno. The Arduino will read the output from the analog turbidity sensor and convert that value into a turbidity reading. The developers of the sensor have published a tentative relation; however, further testing must be done to prove the validity of the relation. If the readings do not correlate to accurate turbidity, we may have to empirically develop a relation of our own. The microcontroller will also feature a digital display for the turbidity reading and a pushbutton for calibrating the sensor in clear fluid.
@@ -99,6 +105,23 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 
 ![MAPE extension cage](/drawings/MAPE_2018-Mar-10_11-59-06PM-000_CustomizedView19818279152.png) <br/>
 
+ **Variables**
+ <br/>
+| Variables       |  Description | Value |
+|:--------------- |:----------:| -------- |
+| diam            | inner diameter |          |
+| length          |     2      |          |
+| width           |            |          |
+| screwdiam       |            |          |
+| screwdist       |            |          |
+| screwhead       |            |          |
+| thread_diam     |            |          |
+| thread_length   |            |          |
+| RubberDist      |            |          |
+| RubberThickness |            |          |
+| screwdisttoedge |            |          |
+
+<br/>
 <div class="alert alert-block alert-danger">
 Label all figures/photos with numebrs and a caption and then refer to them by their figure number in the report text.
 </div>
