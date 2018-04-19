@@ -16,7 +16,7 @@ Just add in why this technology is important.
 
 ## Introduction
 
-The general goal of the Sensor Development subteam is to monitor different processes during the water treatment process. In the beginning, the Sensor Development team was created to work on a sensor to improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. Subsequently, the subteam moved on to develop a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process. Last semester's team worked on refining the fluidized bed solids concentration sensor and successfully finished developing a working sensor. Now that we have completed the sensor for HRS, the subteam has currently progressed to building a submersible solids concentration sensor to measure the height of the sludge blanket in the sedimentation tank. 
+The general goal of the Sensor Development subteam is to develop different sensors to monitor different processes during the water treatment process. In the beginning, the Sensor Development team was created to work on a sensor to improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. Subsequently, the subteam moved on to develop a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process. Last semester's team worked on refining the fluidized bed solids concentration sensor and successfully finished developing a working sensor. Now that we have completed the sensor for HRS, the subteam has currently progressed to building a submersible solids concentration sensor to measure the height of the sludge blanket in the sedimentation tank. 
 
 
 <div class="alert alert-block alert-danger">
@@ -53,7 +53,7 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
 
 2. Expandable Ruler System <br/>
 
-   Instead of using a marked reel, we’ve decided to use an expandable ruler system that we would fabricate in lab. This system would consist of multiple 20 cm long panels marked with heights. These panels would be  connected by double hinges. The endoscope wiring would run along the side through a series of loops to keep the wiring in place. In order to lower the endoscope down, we would release panel by panel until the endoscope has reached the sludge blanket. Then we could read the height off of the panels. The benefits of this expandable system is that it would be easy to expand and collapse, making it ideal for transport. The panels would also provide a rigid backing so that the endoscope wire, which is semi-rigid, would go into the water at a 90 degree angle and provide us with a more accurate reading.
+   Instead of using a marked reel, we’ve decided to use an expandable ruler system that we would fabricate in lab. This system would consist of multiple 20 cm long panels marked with heights. These panels would be  connected by double hinges. The endoscope wiring would run along the side through a series of loops to keep the wiring in place. In order to lower the endoscope down, we would release panel by panel until the endoscope has reached the sludge blanket. Then we could read the height off of the panels. The benefits of this expandable system is that it would be easy to expand and collapse, making it ideal for transport. The panels would also provide a rigid backing so that the endoscope wire, which is semi-rigid, would go into the water at a 90 degree angle and provide us with a more accurate reading and height.
 
    **Have diagram here**
 
@@ -86,7 +86,8 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
    Where do you get the analog turbidity sensor?
    </div>
 
-2. Marked Reel <br/>
+2. Expandable Ruler System<br/>
+   This expandable ruler system is the same as that of for the MAPES sensor system. We will fabricate it in the same way but the endoscope will be replaced by the turbidity sensor.  
 
 
 3. Microcontroller <br/>
