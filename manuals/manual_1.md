@@ -7,11 +7,9 @@ Please do not delete my comments. On the next submission I will use them to see 
 </div>
 
 ## Abstract
-<!--Briefly summarize your previous work, goals and objectives, what you have accomplished, and future work. (100 words max)-->
+<!--Summary of previous work, goals and objectives, accomplishments, and future work. -->
 
-The goal of the Sensor Development subteam is to create sensors that monitor water quality during the water treatment process. The subteam has previously developed particle concentration and turbidity sensors, including a fluidized bed solids detector for in-lab experiments in transparent tubing and a submersible solids detector for field use in less reachable sedimentation tanks, the latter because the most affordable turbidimeters currently are stationary, requiring extracted fluid samples. This semester’s focus is on redesigning a simpler and more usable submersible solids detector to more easily provide real-time measurements of turbidity and sludge blanket height in sedimentation tanks. Two designs involving an endoscope and analog turbidity sensor, respectively, are being compared for accuracy and usability.
-
-<span style="color:red"> Could you guys help get this down to the word limit? Currently 115. </span>
+The goal of the Sensor Development subteam is to create sensors that monitor water quality during the water treatment process. The subteam has previously developed particle concentration and turbidity sensors, including a fluidized bed solids detector for in-lab experiments conducted in piping. This semester, the subteam is designing a submersible solids detector for measuring turbidity and sludge blanket height in sedimentation tanks. The aim is to create a turbidimeter and sludge blanket height detector that is more affordable, easier to fabricate, and more usable than those currently used in the field. Two designs involving an endoscope and analog turbidity sensor, respectively, are being compared for accuracy and usability.
 
 <div class="alert alert-block alert-danger">
 Just add in why this technology is important.
@@ -20,7 +18,7 @@ Just add in why this technology is important.
 ## Introduction
 <!--Explain how the completion of your challenge will affect AguaClara and the mission of providing safe drinking water (or sustainable wastewater treatment!). If this is a continuing team, how will your contribution build upon previous research? What needs to be further discovered or defined? If this is a new team, what prompted the inclusion of this team?-->
 
-The Sensor Development subteam creates sensors to monitor water quality in various stages of the AguaClara wastewater and drinking water treatment processes, for purposes not limited to facilitating research, gauging the efficacy of the treatment process, and detecting problems in the treatment process. The subteam's first project was to develop a sensor that would improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. Afterward, the subteam fabricated a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process for drinking water treatment. Last semester's team worked on refining the fluidized bed solids concentration sensor, finishing with a working and reliable sensor. This semester, the subteam is building a submersible solids concentration sensor to measure turbidity and the height of the sludge blanket in the sedimentation tanks of drinking water treatment plants.
+The Sensor Development subteam creates sensors to monitor water quality in various stages of the AguaClara wastewater and drinking water treatment processes, for purposes not limited to facilitating research, gauging the efficacy of the treatment process, and detecting problems in the treatment process. The subteam's first project was to develop a gas measurement sensor<sup>1</sup> that would improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. Afterward, the subteam worked on a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process for drinking water treatment. Last semester's team refined the fluidized bed solids concentration sensor, finishing with a working and reliable sensor<sup>2</sup>. This semester, the subteam is building a submersible solids concentration sensor to measure turbidity and the height of the sludge blanket in the sedimentation tanks of drinking water treatment plants.
 
 <div class="alert alert-block alert-danger">
 Confusing to mention goal of helping wastewater treatment and then say that the first design wen to help HRS, which is a drinking water treatment.
@@ -30,9 +28,10 @@ What semester fif the sensor to measure the height of the sludge blanket?
 What is the fluidized bed solids concentration sensor purpose and did they suceed in making one?
 </div>
 
-<span style="color:red"> Wait, abstract says that the team also worked on a submersible solids detector before, and is now improving it. Should probably modify last sentence of previous paragraph and first sentence of this paragraph to reflect that. </span>
+This semester, the Sensor Development subteam is implementing two new designs for a submersible solids concentration, or turbidity sensor based on the two ideas recommended by our advisor and by other AguaClara members. The primary design features an endoscope and visual processing in a mobile application, providing an intuitive and appealing user interface. In the second design, a pre-developed analog turbidity sensor is interfaced with a microcontroller, a system that is easier and cheaper to implement but provides a difficult user interface. The end goal of both designs is to provide the treatment plant operators and members of other subteams with a more affordable, easily used and maintained, and instantaneous method of not only determining the height of the sludge blanket, but also measuring the turbidity of the sedimentation tank fluid at varying depths.
 
-This semester, the Sensor Development subteam is implementing two new designs for a submersible solids concentration, or turbidity sensor based on the two ideas provided to us by our advisor and by other recommendations from AguaClara members. The primary design features an endoscope and visual processing in a mobile application which will provide a more intuitive user interface. In the second design, a pre-developed analog turbidity sensor is interfaced with a microcontroller which is easier and cheaper to implement but has a difficult user-interface. The end goal of both designs is to provide the treatment plant users and members of other subteams with a more affordable, easily used and maintained, and instantaneous method of not only determining the height of the sludge blanket, but also measuring the turbidity of the sedimentation tank fluid at varying depths.
+<sup>1</sup> For further reference, see the [Fall 2016 report]( https://www.overleaf.com/read/jyzxckcyzrfz#/20452187/). </br>
+<sup>2</sup> For further reference, see the [Fall 2017 report](https://www.overleaf.com/10952600qfscwzjvygcj#/41225444/).
 
 <div class="alert alert-block alert-danger">
 Watch run-on sentences
@@ -45,16 +44,22 @@ Why are you pursuing two different design ideas?
 ## Product Details
 
 **Mobile Application-Processed Endoscope (MAPE) Turbidity Sensor** <br/>
-The mobile application-processed endoscope turbidity sensor encompasses three main physical components: 1) the endoscope, 2) a marked reel, and 3) a mobile device, such as a smartphone, provided by the user. The sensor system also contains one software component: a mobile application (on the mobile device), that processes and displays data from the endoscope and interacts with the user.
+The mobile application-processed endoscope turbidity sensor encompasses three main physical components: 1) the endoscope, 2) an expandable ruler system, and 3) a mobile device, such as a smartphone, provided by the user. The sensor system also contains one software component: a mobile application (on the mobile device), that processes and displays data from the endoscope and interacts with the user.
 
 1. Endoscope <br/>
-   An endoscope is a type of borescope, an optical instrument that is typically slender, illuminated by built in lights, and attached to a long cable, making it suited to viewing inside otherwise inaccessible places. An endoscope specifically was chosen for this turbidity sensor for its small size, accuracy, water resistance, and device compatibility. <br/>
+   An endoscope is a type of borescope, an optical instrument that is typically slender, illuminated by built in lights, and attached to a long cable, making it suitable for viewing inside otherwise inaccessible places. An endoscope specifically was chosen for this turbidity sensor for its small size, accuracy, water resistance, and device compatibility. <br/>
+
+   <p align="center">
+   <img src="Depstech_endoscope.jpg" height=300> </br>
+   </p>
+   Figure 1. This endoscope purchased from Depstech&reg; features a 5 meter-long semirigid cable, a 2.0 MP camera ringed with adjustable LED lights, and a type-c USB end with complementary USB and micro-USB extensions. See the **Special Components** section for more details.</br>
+   </br>
 
    <div class="alert alert-block alert-danger">
    What endoscope did you choose? Where did you get it from? Do you have a photo?
    </div>
 
-   The role of the endoscope is to capture images of the sedimentation tank fluid at certain depths. The images will be lit by its light source, a ring of LED lights around the camera lens. To restrict its view to such depths, the endoscope is accompanied by a non-reflective material, such as matte black rubber, fixed no more than an inch in front of its lens. The turbidity of the fluid is thus measured by intensity of light reflected back to the endoscope due to the presence of suspended solids. In fluid of low solids concentration, the endoscope should detect minimal reflection of light.
+   The role of the endoscope is to capture images of the sedimentation tank fluid at certain depths. The images will be lit by its light source, a ring of LED lights around the camera lens. To restrict its view to such depths, the endoscope is accompanied by a non-reflective material, such as matte rubber, fixed no more than an inch in front of its lens. The turbidity of the fluid is thus measured by intensity of light reflected back to the endoscope due to the presence of suspended solids. In fluid of low solids concentration, the endoscope should detect minimal reflection of light.
 
 2. Expandable Ruler System <br/>
 
@@ -69,7 +74,7 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    </div>
 
 3. Mobile Device and Application <br/>
-   The mobile device is a smartphone or tablet computer provided by the user. It connects to the endoscope by a USB-C, USB, or Micro USB connection and runs the mobile application.
+   The mobile device is a smartphone or tablet computer provided by the user. It connects to the endoscope by a USB-C, USB, or Micro USB connection and runs the mobile application that we are in the process of programming.
 
    The application collects live images taken by the endoscope, processes each one for average light intensity, and calculates the turbidity of the fluid in each image. This calculation considers the correlation between turbidity and the intensity of reflected light and offsets for any light detected during calibration of the sensor in clear fluid.
 
@@ -80,10 +85,12 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    </div>
 
 **Microcontroller-Interfaced Analog (MIA) Turbidity Sensor** <br/>
-The microcontroller-interfaced analog turbidity sensor also encompasses three main physical components: 1) the analog turbidity sensor, 2) a marked reel, and 3) a microcontroller, such as an Arduino, programmed to convert and displays data from the endoscope and interact with the user.
+The microcontroller-interfaced analog turbidity sensor also encompasses three main physical components: 1) the analog turbidity sensor, 2) an expandable ruler system, and 3) a microcontroller, such as an Arduino, programmed to convert and displays data from the endoscope and interact with the user.
 
 1. Analog Turbidity sensor <br/>
    The analog turbidity sensor is a pre-developed sensor with an adaptor board for either analog or digital output. The analog output, after adjustment by the adaptor's potentiometer, is input into the microcontroller to be converted to a numerical turbidity value.
+
+   See the **Special Components** section for details on the turbidity sensor and where to purchase additional sensors.
 
    <div class="alert alert-block alert-danger">
    Use consistent capitalization in headers
@@ -97,6 +104,8 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 
 3. Microcontroller <br/>
    The microcontroller we are using is the Arduino Uno. The Arduino will read the output from the analog turbidity sensor and convert that value into a turbidity reading. The developers of the sensor have published a tentative relation; however, further testing must be done to prove the validity of the relation. If the readings do not correlate to accurate turbidity, we may have to empirically develop a relation of our own. The microcontroller will also feature a digital display for the turbidity reading and a pushbutton for calibrating the sensor in clear fluid.
+
+   See the **Special Components** section for details on the Arduino microcontroller.
 
    <div class="alert alert-block alert-danger">
    Where do you get these things and do you have photos of them? For people reading this for the first time, a photo really helped understanding and visualization.
