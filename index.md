@@ -37,8 +37,8 @@ To learn more about the specifics of our subteam, please look through the tabs b
 
 ## Current Tasks
 
-  - Currently working on fabrication of an expandable system for MAPE design.
-  - Working on finding an endoscope that is flexible enough.
+  - Currently working on fabrication of an expandable ruler system for MAPE design.
+  - Currently working on endoscope attachment fabrication and supplies.
   
 
 Learn more about each of the [components](./components/components.md) of our sensor plan.
