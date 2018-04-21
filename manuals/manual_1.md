@@ -50,7 +50,7 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    An endoscope is a type of borescope, an optical instrument that is typically slender, illuminated by built in lights, and attached to a long cable, making it suitable for viewing inside otherwise inaccessible places. An endoscope specifically was chosen for this turbidity sensor for its small size, accuracy, water resistance, and device compatibility. <br/>
 
    <p align="center">
-   <img src="/../images/Depstech_endoscope.jpg" height=300> </br>
+   <img src="/images/Depstech_endoscope.jpg" height=300> </br>
    </p>
    Figure 1. This endoscope purchased from Depstech&reg; features a 5 meter-long semirigid cable, a 2.0 MP camera ringed with adjustable LED lights, and a type-c USB end with complementary USB and micro-USB extensions. See <strong> Special Components </strong> for more details.</br>
    </br>
@@ -122,7 +122,7 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
    The only modification necessary for the endoscope is the addition of a cage holding the non-reflective material in front of the camera lens. The material will be mounted to a disk, which will be held at the end of three prongs. The prongs themselves will be attached to a sleeve that slides onto the body of the endoscope. (The prongs will allow for the normal movement of particles between the camera and disk.) Finally, the sleeve will be held in place by an adjustable screw, as a shaft collar is held by a set screw. The sleeve, prongs, and plate will be made of metal, and for the non-reflective material we currently suggest matte black rubber. To fix the position along the endoscope at which the sleeve attaches, another metal collar can be attached as a stopping point. Below is a plan of the cage. <br/>
 
    <p align="center">
-   <img src="/../drawings/MAPE_extension.png" height=300> </br>
+   <img src="/drawings/MAPE_extension.png" height=300> </br>
    </p>
    Figure 3. <span style="color:red">CAPTION HERE (what do we need to add though anyway?) </span> See the Fusion 360&trade; <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v5.f3d"> here</a>. </br>
    </br>
@@ -155,8 +155,8 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
    The main fabrication required for the MIA turbidity sensor is containing the top of the analog turbidity sensor, adaptor board, and the wire connections in waterproof casing. (The pre-developed analog turbidity sensor is only waterproofed at the bottom, where the actual detectors were, while the top and all other connecting wires and boards were left open.) For our prototype, we have glued a threaded PVC connector pipe with two (connected) chambers to the top of the sensor. The bottom chamber is narrow enough in diameter to sit on the top of the sensor, while the top chamber is wide enough to contain the adaptor board. We then drilled a hole in a sheet of PVC, pulled the wires from the adaptor board through the hole, and glued it as a lid to the top. These three wires (VCC, GND, and Output) were then covered in flexible tubing. <br/>
 
    <p align="center">
-   <img src="/../images/MIA_inside.jpg" height=300> </br> </br>
-   <img src="/../images/MIA_whole.jpg" height=300> <br>
+   <img src="/images/MIA_inside.jpg" height=300> </br> </br>
+   <img src="/images/MIA_whole.jpg" height=300> <br>
    </p>
    <span style="color:red"> FIX ROTATION FOR FIRST PIC AND ADD CAPTIONS </span> </br>
 
