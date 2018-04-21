@@ -50,9 +50,9 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    An endoscope is a type of borescope, an optical instrument that is typically slender, illuminated by built in lights, and attached to a long cable, making it suitable for viewing inside otherwise inaccessible places. An endoscope specifically was chosen for this turbidity sensor for its small size, accuracy, water resistance, and device compatibility. <br/>
 
    <p align="center">
-   <img src="Depstech_endoscope.jpg" height=300> </br>
+   <img src="/../images/Depstech_endoscope.jpg" height=300> </br>
    </p>
-   Figure 1. This endoscope purchased from Depstech&reg; features a 5 meter-long semirigid cable, a 2.0 MP camera ringed with adjustable LED lights, and a type-c USB end with complementary USB and micro-USB extensions. See the **Special Components** section for more details.</br>
+   Figure 1. This endoscope purchased from Depstech&reg; features a 5 meter-long semirigid cable, a 2.0 MP camera ringed with adjustable LED lights, and a type-c USB end with complementary USB and micro-USB extensions. See <strong> Special Components </strong> for more details.</br>
    </br>
 
    <div class="alert alert-block alert-danger">
@@ -63,9 +63,12 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
 
 2. Expandable Ruler System <br/>
 
-   Instead of using a marked reel, we’ve decided to use an expandable ruler system that we would fabricate in lab. This system would consist of multiple 20 cm long panels marked with heights. These panels would be  connected by double hinges. The endoscope wiring would run along the side through a series of loops to keep the wiring in place. In order to lower the endoscope down, we would release panel by panel until the endoscope has reached the sludge blanket. Then we could read the height off of the panels. The benefits of this expandable system is that it would be easy to expand and collapse, making it ideal for transport. The panels would also provide a rigid backing so that the endoscope wire, which is semi-rigid, would go into the water at a 90 degree angle and provide us with a more accurate reading and height.
+   Instead of using a marked reel, we are fabricating an expandable ruler system to measuring the length the endoscope has been lowered by. This system consists of multiple 20 cm long PVC panels marked at each centimeter. The panels are connected by double hinges to expand and collapse in an accordion style, while the endoscope cable runs down the side of the panels through a series of loops, folding with the panels
+   <span style="color:red"> *(see Figure 2)*. </span>
+   Thus, the user may lower the system panel by panel until the endoscope has reached the sludge blanket. The height of the sludge blanket would equal the depth of the endoscope, measured by panel markings, subtracted from the total height of the sedimentation tank. The advantage of this expandable system is its collapsibility, making it ideal for transport. The panels also provide a rigid backing so that the endoscope wire, which is semi-rigid, may remain perpendicular to the bottom of the tank, maintaining an accurate height reading.
 
-   **Have diagram here**
+   Figure 2. **Have diagram here**
+
 
    <div class="alert alert-block alert-danger">
    Where do we get these from?
@@ -87,10 +90,10 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
 **Microcontroller-Interfaced Analog (MIA) Turbidity Sensor** <br/>
 The microcontroller-interfaced analog turbidity sensor also encompasses three main physical components: 1) the analog turbidity sensor, 2) an expandable ruler system, and 3) a microcontroller, such as an Arduino, programmed to convert and displays data from the endoscope and interact with the user.
 
-1. Analog Turbidity sensor <br/>
+1. Analog Turbidity Sensor <br/>
    The analog turbidity sensor is a pre-developed sensor with an adaptor board for either analog or digital output. The analog output, after adjustment by the adaptor's potentiometer, is input into the microcontroller to be converted to a numerical turbidity value.
 
-   See the **Special Components** section for details on the turbidity sensor and where to purchase additional sensors.
+   See **Special Components** for details on the turbidity sensor and where to purchase additional sensors.
 
    <div class="alert alert-block alert-danger">
    Use consistent capitalization in headers
@@ -105,7 +108,7 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 3. Microcontroller <br/>
    The microcontroller we are using is the Arduino Uno. The Arduino will read the output from the analog turbidity sensor and convert that value into a turbidity reading. The developers of the sensor have published a tentative relation; however, further testing must be done to prove the validity of the relation. If the readings do not correlate to accurate turbidity, we may have to empirically develop a relation of our own. The microcontroller will also feature a digital display for the turbidity reading and a pushbutton for calibrating the sensor in clear fluid.
 
-   See the **Special Components** section for details on the Arduino microcontroller.
+   See **Special Components** for details on the Arduino microcontroller.
 
    <div class="alert alert-block alert-danger">
    Where do you get these things and do you have photos of them? For people reading this for the first time, a photo really helped understanding and visualization.
@@ -118,8 +121,13 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 **Fabrication for the MAPE Turbidity Sensor** <br/>
    The only modification necessary for the endoscope is the addition of a cage holding the non-reflective material in front of the camera lens. The material will be mounted to a disk, which will be held at the end of three prongs. The prongs themselves will be attached to a sleeve that slides onto the body of the endoscope. (The prongs will allow for the normal movement of particles between the camera and disk.) Finally, the sleeve will be held in place by an adjustable screw, as a shaft collar is held by a set screw. The sleeve, prongs, and plate will be made of metal, and for the non-reflective material we currently suggest matte black rubber. To fix the position along the endoscope at which the sleeve attaches, another metal collar can be attached as a stopping point. Below is a plan of the cage. <br/>
 
-![MAPE extension cage](/drawings/MAPE_2018-Mar-10_11-59-06PM-000_CustomizedView19818279152.png) <br/>
+   <p align="center">
+   <img src="/../drawings/MAPE_extension.png" height=300> </br>
+   </p>
+   Figure 3. <span style="color:red">CAPTION HERE (what do we need to add though anyway?) </span> See the Fusion 360&trade; <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v5.f3d"> here</a>. </br>
+   </br>
 
+<span style="color:red"> *FINISH TABLE* </span> </br>
  **Variables**
  <br/>
 | Variables       |  Description | Value |
@@ -146,17 +154,25 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
 **Fabrication for the MIA Turbidity Sensor** <br/>
    The main fabrication required for the MIA turbidity sensor is containing the top of the analog turbidity sensor, adaptor board, and the wire connections in waterproof casing. (The pre-developed analog turbidity sensor is only waterproofed at the bottom, where the actual detectors were, while the top and all other connecting wires and boards were left open.) For our prototype, we have glued a threaded PVC connector pipe with two (connected) chambers to the top of the sensor. The bottom chamber is narrow enough in diameter to sit on the top of the sensor, while the top chamber is wide enough to contain the adaptor board. We then drilled a hole in a sheet of PVC, pulled the wires from the adaptor board through the hole, and glued it as a lid to the top. These three wires (VCC, GND, and Output) were then covered in flexible tubing. <br/>
 
+   <p align="center">
+   <img src="/../images/MIA_inside.jpg" height=300> </br> </br>
+   <img src="/../images/MIA_whole.jpg" height=300> <br>
+   </p>
+   <span style="color:red"> FIX ROTATION FOR FIRST PIC AND ADD CAPTIONS </span> </br>
+
    We plan to fabricate a case for the microcontroller for protection and easy handling and for holding the digital display. It will also include a rubber button connected to a pushbutton on the microcontroller to allow the user to calibrate the sensor.
 
    <div class="alert alert-block alert-danger">
    Any photos to include?
    </div>
 
-  \--------------
-   The reel system for both sensors has not been fully developed yet. We plan to fabricate a rotating cylinder with a handle that will allow for easy manipulation of the sensor height.
+   ____________________________________
+   As mentioned in **Product details**, ... <span style="color:red"> *(write more about fabricating the expandable ruler)* </span>
 
    <div class="alert alert-block alert-danger">
    Do you have a diagram of what this may look like?
+
+   Our comment again: we've replaced the reel system with the expandable ruler and have included a diagram for it
    </div>
 
 ## Special Components
@@ -291,6 +307,12 @@ void loop() {
       digitalWrite(ledPin, LOW);
     }
   }
+```
+
+## Java Code
+```
+//Will put Java code here. Include some results too.
+
 ```
 
 <div class="alert alert-block alert-danger">
