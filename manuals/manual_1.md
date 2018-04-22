@@ -67,7 +67,7 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    <span style="color:red"> *(see Figure 2)*. </span>
    Thus, the user may lower the system panel by panel until the endoscope has reached the sludge blanket. The height of the sludge blanket would equal the depth of the endoscope, measured by panel markings, subtracted from the total height of the sedimentation tank. The advantage of this expandable system is its collapsibility, making it ideal for transport. The panels also provide a rigid backing so that the endoscope wire, which is semi-rigid, may remain perpendicular to the bottom of the tank, maintaining an accurate height reading.
 
-   Figure 2. <img src="/images/rulersystem.png">
+   Figure 2. <img src="/images/rulersystem_2.png">
 
 
    <div class="alert alert-block alert-danger">
