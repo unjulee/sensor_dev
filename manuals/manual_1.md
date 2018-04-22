@@ -68,7 +68,14 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    Thus, the user may lower the system panel by panel until the endoscope has reached the sludge blanket. The height of the sludge blanket would equal the depth of the endoscope, measured by panel markings, subtracted from the total height of the sedimentation tank. The advantage of this expandable system is its collapsibility, making it ideal for transport. The panels also provide a rigid backing so that the endoscope wire, which is semi-rigid, may remain perpendicular to the bottom of the tank, maintaining an accurate height reading.
 
    Figure 2. <img src="/images/rulersystem_2.png">
-
+   
+   
+  
+   
+   Figure 3. <img src="/images/ruler_example.png">
+   
+   
+   The above figure is an image of the prototype of the expandable ruler system made of two panels with single hinges for testing purposes.
 
    <div class="alert alert-block alert-danger">
    Where do we get these from?
@@ -124,7 +131,7 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
    <p align="center">
    <img src="/drawings/MAPE_extension.png" height=300> </br>
    </p>
-   Figure 3. <span style="color:red">CAPTION HERE (what do we need to add though anyway?) </span> See the Fusion 360&trade; <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v5.f3d"> here</a>. </br>
+   Figure 4. <span style="color:red">CAPTION HERE (what do we need to add though anyway?) </span> See the Fusion 360&trade; <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v5.f3d"> here</a>. </br>
    </br>
 
 <span style="color:red"> *FINISH TABLE* </span> </br>
