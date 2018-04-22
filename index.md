@@ -2,6 +2,10 @@
 
 Throughout the semester, we will update this page with current tasks, projects completed,
 and other things we want to have easy access to.
+
+Here is the ruler system we are currently fabricating:
+
+
 ![](./images/rulersystem.png)
 
 ## About Us
