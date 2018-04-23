@@ -181,6 +181,10 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
 
    Our comment again: we've replaced the reel system with the expandable ruler and have included a diagram for it
    </div>
+   
+   **Fabrication for the Expandable Ruler System**</br>
+   As mentioned before, the Expandable Ruler System is made up of multiple 20 cm long PVC panels marked at each centimeter. Each of the panels are connected by double hinges to expand and collapse. The endoscope cable runs down the side of the panels through a series of loops which we attach to the side of the PVC panel (see Figure 2). Although we used single hinges for the prototype (see Special Components), we plan to use a double hinge in future iterations. Please refer to figure 3 for the prototype.
+   
 
 ## Special Components
 
@@ -197,7 +201,10 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
    <div class="alert alert-block alert-danger">
    I see that you have ordering information down here, which is fantastic. Consider moving this info into those sections instead of putting it here, but otherwise ignore my earlier comments about where to purchase the materials.
    </div>
-
+#### Expandable Ruler System
+**Single Hinges** </br>
+   The single hinges used in the prototype can be found [here](https://www.mcmaster.com/#1635a25/=1c2z1rq).
+   
 ## Experimental Methods
 
 ### Current Experimental Methods
