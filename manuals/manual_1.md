@@ -165,7 +165,8 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
 
    <p align="center">
    <img src="/images/MIA_inside.jpg" height=300> </br> </br>
-   The above image shows the inside of the head of the MIA sensor system, containing connections to and out of the adaptor board.
+   The above image shows the inside of the head of the MIA sensor system, </br>
+   containing connections to and out of the adaptor board. </br>
    <img src="/images/MIA_whole.jpg" height=300> <br>
    The above image shows the outer view of the head of the MIA sensor. The PVC is completely waterproofed with the adaptor board sealed inside and the wires coming out of the adaptor board are wrapped in flexible tubing as seen.
    </p>
@@ -205,6 +206,7 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
    <div class="alert alert-block alert-danger">
    I see that you have ordering information down here, which is fantastic. Consider moving this info into those sections instead of putting it here, but otherwise ignore my earlier comments about where to purchase the materials.
    </div>
+   
 #### Expandable Ruler System
 **Single Hinges** </br>
    The single hinges used in the prototype can be found [here](https://www.mcmaster.com/#1635a25/=1c2z1rq).
