@@ -3,11 +3,6 @@
 Throughout the semester, we will update this page with current tasks, projects completed,
 and other things we want to have easy access to.
 
-Here is the ruler system we are currently fabricating:
-
-
-![](./images/rulersystem.png)
-
 ## About Us
 
 Our goal is to create a lowcost but efficient concentration detector by essentially hijacking 
@@ -23,6 +18,14 @@ The current members of this subteam are
 * Srilekha Vangavolu (SV397)
 * Hannah Si (HS649)
 
+Here is the ruler system we are currently fabricating:
+
+
+![](./images/rulersystem.png)
+
+## Srilekha's CAD rendering of the MAPE design.
+<img src="/drawings/MAPE_extension.png" height=300> </br>
+
 To learn more about the specifics of our subteam, please look through the tabs below.
 
 
@@ -32,12 +35,7 @@ To learn more about the specifics of our subteam, please look through the tabs b
 * [Code](./code/code.md)
 
 
-
-## Srilekha's CAD rendering of the MAPE design.
-![MAPE extension cage](/drawings/MAPE_2018-Mar-10_11-59-06PM-000_CustomizedView19818279152.png) 
-
-
-![](taskmap.jpg)
+<img src="/images/ruler_example.png"> </br>
 
 ## Current Tasks
 
