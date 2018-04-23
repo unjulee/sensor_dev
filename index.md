@@ -24,7 +24,7 @@ Here is the ruler system we are currently fabricating:
 ![](./images/rulersystem.png)
 
 ## Srilekha's CAD rendering of the MAPE design.
-<img src="/drawings/MAPE_extension.png" height=300> </br>
+![](./drawings/MAPE_extension.png)
 
 To learn more about the specifics of our subteam, please look through the tabs below.
 
@@ -35,7 +35,7 @@ To learn more about the specifics of our subteam, please look through the tabs b
 * [Code](./code/code.md)
 
 
-<img src="/images/ruler_example.png"> </br>
+![](./images/ruler_example.png)
 
 ## Current Tasks
 
