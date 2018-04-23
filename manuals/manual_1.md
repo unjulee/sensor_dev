@@ -30,7 +30,9 @@ What is the fluidized bed solids concentration sensor purpose and did they sucee
 
 This semester, the Sensor Development subteam is implementing two new designs for a submersible solids concentration, or turbidity sensor based on the two ideas recommended by our advisor and by other AguaClara members. The primary design features an endoscope and visual processing in a mobile application, providing an intuitive and appealing user interface. In the second design, a pre-developed analog turbidity sensor is interfaced with a microcontroller, a system that is easier and cheaper to implement but provides a difficult user interface. The end goal of both designs is to provide the treatment plant operators and members of other subteams with a more affordable, easily used and maintained, and instantaneous method of not only determining the height of the sludge blanket, but also measuring the turbidity of the sedimentation tank fluid at varying depths.
 
-<sup>1</sup> For further reference, see the [Fall 2016 report]( https://www.overleaf.com/read/jyzxckcyzrfz#/20452187/). </br>
+<sup>1</sup> For further reference, see the [Fall 2016 report]( https://www.overleaf.com/read/jyzxckcyzrfz#/20452187/). 
+
+
 <sup>2</sup> For further reference, see the [Fall 2017 report](https://www.overleaf.com/10952600qfscwzjvygcj#/41225444/).
 
 <div class="alert alert-block alert-danger">
@@ -163,7 +165,9 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
 
    <p align="center">
    <img src="/images/MIA_inside.jpg" height=300> </br> </br>
+   The above image shows the inside of the head of the MIA sensor system, containing connections to and out of the adaptor board.
    <img src="/images/MIA_whole.jpg" height=300> <br>
+   The above image shows the outer view of the head of the MIA sensor. The PVC is completely waterproofed with the adaptor board sealed inside and the wires coming out of the adaptor board are wrapped in flexible tubing as seen.
    </p>
    <span style="color:red"> FIX ROTATION FOR FIRST PIC AND ADD CAPTIONS </span> </br>
 
@@ -182,7 +186,7 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
    Our comment again: we've replaced the reel system with the expandable ruler and have included a diagram for it
    </div>
    
-   **Fabrication for the Expandable Ruler System**</br>
+   **Fabrication for the Expandable Ruler System** </br>
    As mentioned before, the Expandable Ruler System is made up of multiple 20 cm long PVC panels marked at each centimeter. Each of the panels are connected by double hinges to expand and collapse. The endoscope cable runs down the side of the panels through a series of loops which we attach to the side of the PVC panel (see Figure 2). Although we used single hinges for the prototype (see Special Components), we plan to use a double hinge in future iterations. Please refer to figure 3 for the prototype.
    
 
