@@ -106,7 +106,7 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
    <p align="center">
    <img src="/images/analog_turbidity_sensor.jpg" height=300>
    </p>
-   Figure 4. The pre-developed analog turbidity sensor includes an adaptor board for either analog or digital output. See <strong> Special Components. </strong> for details.
+   Figure 4. The pre-developed analog turbidity sensor includes an adaptor board for either analog or digital output. See <strong> Special Components </strong> for details and image source. </p>
 
    <div class="alert alert-block alert-danger">
    Use consistent capitalization in headers
@@ -132,15 +132,15 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 ## Fabrication
 
 **Fabrication for the MAPE Turbidity Sensor** <br/>
-   The only modification necessary for the endoscope is the addition of an extension holding the non-reflective material in front of the camera lens. The material will be mounted to a disk held at the end of three prongs. The prongs themselves will be attached to a sleeve that slides onto the body of the endoscope. (The prongs will allow for the normal movement of particles between the camera and disk.) Finally, the sleeve will be held in place by an adjustable screw, as a shaft collar is held by a set screw. The sleeve, prongs, and plate will be made of metal, and for the non-reflective material we currently suggest matte black rubber. To fix the position along the endoscope at which the sleeve attaches, another metal collar can be attached as a stopping point. Below is a plan of the extension. <br/>
+   The only modification necessary for the endoscope is the addition of an extension holding the non-reflective material in front of the camera lens. The material will be mounted to a disk held at the end of three prongs. The prongs will be attached to a collar that slides onto the body of the endoscope. (The space between the prongs will allow for normal diffusion of particles between the camera and disk.) Finally, the collar will be tightened and secured on the endoscope by a set screw. All parts will be made of metal, except the non-reflective material, for which we suggest matte black rubber. Below is a rendering of the extension. <br/>
 
    <p align="center">
-   <img src="/drawings/MAPE_extension.png" height=300> </br>
+   <!-- <img src="/drawings/MAPE_extension.png" height=300>-->
+   <img src="/drawings/MAPE v6.png"> </br>
    </p>
-   Figure 4. <span style="color:red">CAPTION HERE (what do we need to add though anyway?) </span> Find the Fusion 360&trade; file <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v5.f3d"> here</a>. </br>
+   Figure 5. The extension for the MAPE turbidity sensor consists of a metal collar secured to the endoscope by a set screw. From the collar, three prongs extend out to hold the non-reflective material in front of the camera lens. Find the Fusion 360&trade; file for the extension <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v5.f3d"> here</a>. </br>
    </br>
 
-<span style="color:red"> *FINISH TABLE* </span> </br>
  **Variables**
  <br/>
 | Variables       |  Description | Value |
@@ -171,21 +171,19 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
    <img src="/images/MIA_inside.png" width=200 height=200>
    <img src="/images/MIA_whole.jpg" height=200>
    </p>
-   Figure 5. In this prototype of the MIA sensor, a head made from a PVC connector pipe contains the adaptor board and all of its wire connections. The head is completely waterproofed, with the adaptor board sealed inside and the exiting wires contained in flexible tubing. </p>
+   Figure 6. In this prototype of the MIA sensor, a head made from a PVC connector pipe contains the adaptor board and all of its wire connections. The head is completely waterproofed, with the adaptor board sealed inside and the exiting wires contained in flexible tubing. </p>
 
-   We plan to fabricate a case for the microcontroller for protection and easy handling and for holding the digital display. It will also include a rubber button connected to a pushbutton on the microcontroller to allow the user to calibrate the sensor.
+   We plan to fabricate a case for the microcontroller for protection and easy handling and for holding the digital display. It will also include a rubber button connected to a pushbutton on the microcontroller to allow the user to calibrate the sensor. The design for the case not yet been finalized.
 
    <div class="alert alert-block alert-danger">
    Any photos to include?
    </div>
 
-   ____________________________________
-   As mentioned in **Product details**, ... <span style="color:red"> *(write more about fabricating the expandable ruler)* </span>
 
    <div class="alert alert-block alert-danger">
    Do you have a diagram of what this may look like?
 
-   Our comment again: we've replaced the reel system with the expandable ruler and have included a diagram for it
+   Our comment again: we've replaced the reel system with the expandable ruler and included graphics earlier in the manual
    </div>
 
    **Fabrication for the Expandable Ruler System** </br>
@@ -331,10 +329,96 @@ void loop() {
 ```
 
 ## MAPE Turbidity Sensor Code
-```
-//Will put Java code here. Include some results too.
 
+This is a sample of code written in Java for displaying a video stream from the endoscope and processing its images for average light intensity. For the full set of classes required for this program, visit the code section of our Github repository at AguaClara/sensor_dev/code/endoscope/ (or click [here](https://github.com/AguaClara/sensor_dev/tree/master/code/endoscope)).
 ```
+/* Framework for video frame capture, conversion, and display adapted from
+* http://computervisionandjava.blogspot.com/2013/10/java-opencv-webcam.html
+*/
+
+import java.awt.Graphics;
+import java.util.Date;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import org.opencv.core.Mat;
+import org.opencv.imgproc.Imgproc;
+
+public class EndoscopeFrame extends JFrame {
+    private JPanel contentPane;
+    VideoCap videoCap;
+
+	public static void main(String[] args) {
+        try {
+            EndoscopeFrame frame = new EndoscopeFrame();
+            frame.setVisible(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
+
+	public EndoscopeFrame() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(0, 0, 1280, 960);
+        contentPane = new JPanel();
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        setContentPane(contentPane);
+        contentPane.setLayout(null);
+
+        videoCap = new VideoCap(1);
+        //use argument of 0 or nothing for default camera (for a computer, the webcam)
+        //use argument of 1 or higher for additional cameras (e.g. the USB endoscope camera)
+
+        new MyThread().start();
+    }
+
+    public void paint(Graphics g){
+        g = contentPane.getGraphics();  
+        g.drawImage(videoCap.getOneImgFrame(), 0, 0, this);
+
+        if (counter % 10 == 0)
+			    System.out.println("Average Light: " + averageLight(videoCap.mat2Img.mat, 10));
+    }
+
+    public static int averageLight(Mat mat, int spacing) {
+    		Imgproc.cvtColor(mat, mat, Imgproc.COLOR_BGR2GRAY);
+    		int[][] pixelShades = new int[mat.rows()/spacing+1][mat.cols()/spacing+1];    		
+    		int sum = 0;
+
+    		for (int r = 0; r < mat.rows(); r += spacing) {
+    			for (int c = 0; c < mat.cols(); c += spacing) {
+    				pixelShades[r/spacing][c/spacing] = (int) mat.get(r, c)[0];
+
+    				sum += pixelShades[r/spacing][c/spacing];
+    			}
+    		}
+
+    		return sum/pixelShades.length/pixelShades[0].length;
+    }
+
+    class MyThread extends Thread{
+        @Override
+        public void run() {
+            while (true) {
+                repaint();
+                counter++;
+                try { Thread.sleep(30);
+                } catch (InterruptedException e) { }
+            }  
+        }
+    }
+}
+```
+
+Sample Output:
+<p align="center">
+<img src="/images/endoscope_code_output.png" width=500>
+</p>
+Figure 7. Above is a sample output of the program produced by exposing the camera to light and then covering it, hence the "Average Light" values that fall from near 200 to 0. (Additional code was written for printing elapsed time between calculations.) </p>
+
+
 
 <div class="alert alert-block alert-danger">
 Consider adding in example results from this check. It is hard to understand the code by itself.
