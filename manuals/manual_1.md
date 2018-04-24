@@ -143,19 +143,19 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 
  **Variables**
  <br/>
-| Variables       |  Description | Value |
+| Variables       |  Description |  
 |:--------------- |:----------:| -------- |
 | diam            | inner diameter |          |
-| length          |     2      |          |
-| width           |            |          |
-| screwdiam       |            |          |
-| screwdist       |            |          |
-| screwhead       |            |          |
-| thread_diam     |            |          |
-| thread_length   |            |          |
-| RubberDist      |            |          |
-| RubberThickness |            |          |
-| screwdisttoedge |            |          |
+| length          |      length of cylinder     |          |
+| width           |  width of collar          |          |
+| screwdiam       |       diameter of hex screw     |          |
+| screwdist       |   distance between screws         |          |
+| screwhead       |    diameter of hex screw head        |          |
+| thread_diam     |     diameter of threads       |          |
+| thread_length   |      length of threads      |          |
+| RubberDist      |   distance from end of collar to rubber         |          |
+| RubberThickness |   thickness of black matte material         |          |
+| screwdisttoedge |   distance from screw to edge of collar         |          |
 
 <br/>
 <div class="alert alert-block alert-danger">
