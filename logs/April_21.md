@@ -21,3 +21,8 @@ can't access the light gain code from the developers of the endoscope. We're sti
 not to work as well as we'd like.
 
 
+51mm for each spacer without screw part
+
+48mm+15 for distance from plate and  endoscope 63
+
+63-51=12 mm
