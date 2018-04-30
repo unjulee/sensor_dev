@@ -11,21 +11,13 @@ Please do not delete my comments. On the next submission I will use them to see 
 
 The goal of the Sensor Development subteam is to create sensors that monitor water quality during the water treatment process. The subteam has previously developed particle concentration and turbidity sensors, including a fluidized bed solids detector for in-lab experiments conducted in piping. This semester, the subteam is designing a submersible solids detector for measuring turbidity and sludge blanket height in sedimentation tanks. The aim is to create a turbidimeter and sludge blanket height detector that is more affordable, easier to fabricate, and more usable than those currently used in the field. Two designs involving an endoscope and analog turbidity sensor, respectively, are being compared for accuracy and usability.
 
-<div class="alert alert-block alert-danger">
-Just add in why this technology is important.
-</div>
-
 ## Introduction
 <!--Explain how the completion of your challenge will affect AguaClara and the mission of providing safe drinking water (or sustainable wastewater treatment!). If this is a continuing team, how will your contribution build upon previous research? What needs to be further discovered or defined? If this is a new team, what prompted the inclusion of this team?-->
 
 The Sensor Development subteam creates sensors to monitor water quality in various stages of the AguaClara wastewater and drinking water treatment processes, for purposes not limited to facilitating research, gauging the efficacy of the treatment process, and detecting problems in the treatment process. The subteam's first project was to develop a gas measurement sensor<sup>1</sup> that would improve experimentation in the Anaerobic Fluidized Bed (AFB) Reactor and Upflow Anaerobic Sludge Blanket (UASB) wastewater subteams. Afterward, the subteam worked on a fluidized bed solids concentration sensor to measure clay particle concentration in the high rate sedimentation (HRS) process for drinking water treatment. Last semester's team refined the fluidized bed solids concentration sensor, finishing with a working and reliable sensor<sup>2</sup>. This semester, the subteam is building a submersible solids concentration sensor to measure turbidity and the height of the sludge blanket in the sedimentation tanks of drinking water treatment plants.
 
 <div class="alert alert-block alert-danger">
-Confusing to mention goal of helping wastewater treatment and then say that the first design wen to help HRS, which is a drinking water treatment.
-
-What semester fif the sensor to measure the height of the sludge blanket?
-
-What is the fluidized bed solids concentration sensor purpose and did they suceed in making one?
+Try in-text citations rather than footnotes. You can still link to the reports in in-text citations
 </div>
 
 This semester, the Sensor Development subteam is implementing two new designs for a submersible solids concentration, or turbidity sensor based on the two ideas recommended by our advisor and by other AguaClara members. The primary design features an endoscope and visual processing in a mobile application, providing an intuitive and appealing user interface. In the second design, a pre-developed analog turbidity sensor is interfaced with a microcontroller, a system that is easier and cheaper to implement but provides a difficult user interface. The end goal of both designs is to provide the treatment plant operators and members of other subteams with a more affordable, easily used and maintained, and instantaneous method of not only determining the height of the sludge blanket, but also measuring the turbidity of the sedimentation tank fluid at varying depths.
@@ -34,12 +26,6 @@ This semester, the Sensor Development subteam is implementing two new designs fo
 
 
 <sup>2</sup> For further reference, see the [Fall 2017 report](https://www.overleaf.com/10952600qfscwzjvygcj#/41225444/).
-
-<div class="alert alert-block alert-danger">
-Watch run-on sentences
-
-Why are you pursuing two different design ideas?
-</div>
 
 # Manual
 
@@ -56,10 +42,6 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    </p>
    Figure 1. This endoscope purchased from Depstech&reg; features a 5 meter-long semirigid cable, a 2.0 MP camera ringed with adjustable LED lights, and a type-c USB end with complementary USB and micro-USB extensions. See <strong> Special Components </strong> for more details.</br>
    </br>
-
-   <div class="alert alert-block alert-danger">
-   What endoscope did you choose? Where did you get it from? Do you have a photo?
-   </div>
 
    The role of the endoscope is to capture images of the sedimentation tank fluid at certain depths. The images will be lit by its light source, a ring of LED lights around the camera lens. To restrict its view to such depths, the endoscope is accompanied by a non-reflective material, such as matte rubber, fixed no more than an inch in front of its lens. The turbidity of the fluid is thus measured by intensity of light reflected back to the endoscope due to the presence of suspended solids. In fluid of low solids concentration, the endoscope should detect minimal reflection of light.
 
@@ -80,22 +62,24 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    Figure 3. Above is a prototype of the expandable ruler system, constructed with two PVC panels, plastic loops, and plastic hinges. The prototype is able to collapse (left) for compact storage and also expand (right) to provide a straight, rigid backing for the endoscope cord when hung vertically. </br>
    </br>
 
-   <div class="alert alert-block alert-danger">
-   Where do we get these from?
+<div class="alert alert-block alert-danger">
+Is another advantage that it makes sure that the wire is fully extended and makes it rigid?
 
-   Our comment: We've decided not to use the marked reel anymore and we're pursuing a new design!
-   </div>
+How small does the ruler need to be to fit into the sedimentation tank?
+</div>
 
 3. Mobile Device and Application <br/>
    The mobile device is a smartphone or tablet computer provided by the user. It connects to the endoscope by a USB-C, USB, or Micro USB connection and runs the mobile application that we are in the process of programming.
 
    The application will collect live images taken by the endoscope, process each one for average light intensity, and calculate the turbidity of the fluid in each image. This calculation will use an empirically obtained correlation between turbidity and the intensity of reflected light, as well as offset for any light detected during calibration in clear fluid. See **MAPE Turbidity Sensor Code** for sample processing code.
 
-   The mobile application will also provide a user-friendly interface, directing the user in calibrating the sensor, prompting the user to lower the endoscope to greater depths, and displaying the camera stream and calculated turbidity at each depth. In addition, it will record and graphically plot each calculation to track the change in turbidity as the endoscope nears the sludge blanket. The height of the sludge blanket may be determined once the turbidity rapidly increases or reaches a threshold value.
-
    <div class="alert alert-block alert-danger">
-   Did your team create this application? If not include the source of where it comes from.
+   Revise first sentence (missing comma maybe)
+
+   Did your team develop the empirical correlation? If not make sure to cite your sources.
    </div>
+
+   The mobile application will also provide a user-friendly interface, directing the user in calibrating the sensor, prompting the user to lower the endoscope to greater depths, and displaying the camera stream and calculated turbidity at each depth. In addition, it will record and graphically plot each calculation to track the change in turbidity as the endoscope nears the sludge blanket. The height of the sludge blanket may be determined once the turbidity rapidly increases or reaches a threshold value.
 
 **Microcontroller-Interfaced Analog (MIA) Turbidity Sensor** <br/>
 The microcontroller-interfaced analog turbidity sensor also encompasses three main physical components: 1) the analog turbidity sensor, 2) an expandable ruler system, and 3) a microcontroller programmed to convert and displays data from the endoscope and interact with the user.
@@ -108,12 +92,6 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
    </p>
    Figure 4. The pre-developed analog turbidity sensor includes an adaptor board for either analog or digital output. See <strong> Special Components </strong> for details and image source. </p>
 
-   <div class="alert alert-block alert-danger">
-   Use consistent capitalization in headers
-
-   Where do you get the analog turbidity sensor?
-   </div>
-
 2. Expandable Ruler System<br/>
    This expandable ruler system is the same as that of the MAPES sensor system. We will fabricate it in the same way but the endoscope will be replaced by the turbidity sensor.
 
@@ -122,12 +100,6 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
    The microcontroller we are using is the Arduino&reg; UNO. The Arduino will read the output from the analog turbidity sensor and convert that value into a turbidity reading. The developers of the sensor have published a tentative relation; however, further testing must be done to prove the validity of the relation. If the readings do not correlate to accurate turbidity, we may have to empirically develop a relation of our own. The microcontroller will also feature a digital display for the turbidity reading and a pushbutton for calibrating the sensor in clear fluid.
 
    See **Special Components** for details on the Arduino microcontroller and **MIA Turbidity Sensor Code** for sample code.
-
-   <div class="alert alert-block alert-danger">
-   Where do you get these things and do you have photos of them? For people reading this for the first time, a photo really helped understanding and visualization.
-
-   What are the pros and cons for each of these? Why are you pursuing two different designs? Which one is better?
-   </div>
 
 ## Fabrication
 
@@ -143,7 +115,7 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 
  **Variables**
  <br/>
-| Variables       |  Description |  
+| Variables       |  Description |
 |:--------------- |:----------:| -------- |
 | diam            | inner diameter |          |
 | length          |      length of cylinder     |          |
@@ -159,7 +131,7 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
 
 <br/>
 <div class="alert alert-block alert-danger">
-Label all figures/photos with numebrs and a caption and then refer to them by their figure number in the report text.
+Label all tables with a number and then refer to them by their table number in the report text.
 </div>
 
 <br/>
@@ -175,20 +147,12 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
 
    We plan to fabricate a case for the microcontroller for protection and easy handling and for holding the digital display. It will also include a rubber button connected to a pushbutton on the microcontroller to allow the user to calibrate the sensor. The design for the case not yet been finalized.
 
-   <div class="alert alert-block alert-danger">
-   Any photos to include?
-   </div>
-
-
-   <div class="alert alert-block alert-danger">
-   Do you have a diagram of what this may look like?
-
-   Our comment again: we've replaced the reel system with the expandable ruler and included graphics earlier in the manual
-   </div>
-
    **Fabrication for the Expandable Ruler System** </br>
    As mentioned before, the Expandable Ruler System is made up of multiple 20 cm long PVC panels marked at each centimeter. Each of the panels are connected by double hinges to expand and collapse. The endoscope cable runs down the side of the panels through a series of loops which we attach to the side of the PVC panel (see Figure 2). Although we used single hinges for the prototype (see Special Components), we plan to use a double hinge in future iterations. Please refer to figure 3 for the prototype.
 
+   <div class="alert alert-block alert-danger">
+   Capitalize figure
+   </div>
 
 ## Special Components
 
@@ -202,10 +166,6 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
 **Arduino&reg; UNO**  </br>
    The Arduino UNO can be purchased through the [Arduino website](https://www.arduino.cc/). The Arduino IDE is also available [here](https://www.arduino.cc/en/Main/Software) for free.
 
-   <div class="alert alert-block alert-danger">
-   I see that you have ordering information down here, which is fantastic. Consider moving this info into those sections instead of putting it here, but otherwise ignore my earlier comments about where to purchase the materials.
-   </div>
-
 #### Expandable Ruler System
 **Hinges** </br>
    The plastic hinges used in the prototype can be found [here](https://www.mcmaster.com/#1635a25/=1c2z1rq).
@@ -213,8 +173,7 @@ Label all figures/photos with numebrs and a caption and then refer to them by th
 ## Experimental Methods
 
 ### Current Experimental Methods
-Because we are still in the fabrication and programming process, we are not able to test at this time.
-However, we are intermittently checking to see if the analog turbidity sensors for the MIA turbidity work correctly. We do this by using print statements and checking to see that there is ample fluctuation and a significant difference between high and low turbidities.
+Because we are still in the fabrication and programming process, we are not able to test at this time. However, we are intermittently checking to see if the analog turbidity sensors for the MIA turbidity work correctly. We do this by using print statements and checking to see that there is ample fluctuation and a significant difference between high and low turbidities.
 
 ```arduino
 
@@ -245,6 +204,10 @@ To test our sensors, we will submerge each into fluids of known solids concentra
 
 
 ## MIA Turbidity Sensor Code
+
+<div class="alert alert-block alert-danger">
+For the rest of the manual, details about MAPE come before MIA. Consider switching the order of sections here to be consistent.
+</div>
 
 This C code is to program the Arduino Uno for the MIA sensor. It uses the input from the sensor and the relation provided by the vendors and developers to determine a turbidity. (Programmed with the Arduino IDE)
 
@@ -375,7 +338,7 @@ public class EndoscopeFrame extends JFrame {
     }
 
     public void paint(Graphics g){
-        g = contentPane.getGraphics();  
+        g = contentPane.getGraphics();
         g.drawImage(videoCap.getOneImgFrame(), 0, 0, this);
 
         if (counter % 10 == 0)
@@ -384,7 +347,7 @@ public class EndoscopeFrame extends JFrame {
 
     public static int averageLight(Mat mat, int spacing) {
     		Imgproc.cvtColor(mat, mat, Imgproc.COLOR_BGR2GRAY);
-    		int[][] pixelShades = new int[mat.rows()/spacing+1][mat.cols()/spacing+1];    		
+    		int[][] pixelShades = new int[mat.rows()/spacing+1][mat.cols()/spacing+1];
     		int sum = 0;
 
     		for (int r = 0; r < mat.rows(); r += spacing) {
@@ -406,7 +369,7 @@ public class EndoscopeFrame extends JFrame {
                 counter++;
                 try { Thread.sleep(30);
                 } catch (InterruptedException e) { }
-            }  
+            }
         }
     }
 }
@@ -418,10 +381,8 @@ Sample Output:
 </p>
 Figure 7. Above is a sample output of the program produced by exposing the camera to light and then covering it, hence the "Average Light" values that fall from near 200 to 0. (Additional code was written for printing elapsed time between calculations.) </p>
 
-
-
 <div class="alert alert-block alert-danger">
-Consider adding in example results from this check. It is hard to understand the code by itself.
+Is this MAPE?
 </div>
 
 ```python
