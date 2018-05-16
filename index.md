@@ -18,13 +18,15 @@ The current members of this subteam are
 * Srilekha Vangavolu (SV397)
 * Hannah Si (HS649)
 
+
+## Srilekha's CAD rendering of the MAPE design.
+![](./drawings/MAPE_extension.png)
+
 Here is the ruler system we are currently fabricating:
 
 
 ![](./images/rulersystem.png)
 
-## Srilekha's CAD rendering of the MAPE design.
-![](./drawings/MAPE_extension.png)
 
 To learn more about the specifics of our subteam, please look through the tabs below.
 
