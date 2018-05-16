@@ -138,7 +138,7 @@ The microcontroller-interfaced analog turbidity sensor also encompasses three ma
    <!-- <img src="/drawings/MAPE_extension.png" height=300>-->
    <img src="/drawings/MAPE v6.png" height=250> </br>
    </p>
-   Figure 5. The extension for the MAPE turbidity sensor consists of a metal collar secured to the endoscope by a set screw. From the collar, three prongs extend out to hold the non-reflective material in front of the camera lens. Find the Fusion 360&trade; file for the extension <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v5.f3d"> here</a>. </br>
+   Figure 5. The extension for the MAPE turbidity sensor consists of a metal collar secured to the endoscope by a set screw. From the collar, three prongs extend out to hold the non-reflective material in front of the camera lens. Find the Fusion 360&trade; file for the extension <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v8.f3d"> here</a>. </br>
    </br>
 
  **Variables**
@@ -331,7 +331,7 @@ void loop() {
 ## MAPE Turbidity Sensor Code
 
 This is a sample of code written in Java for displaying a video stream from the endoscope and processing its images for average light intensity. For the full set of classes required for this program, visit the code section of our Github repository at AguaClara/sensor_dev/code/endoscope/ (or click [here](https://github.com/AguaClara/sensor_dev/tree/master/code/endoscope)).
-```
+```java
 /* Framework for video frame capture, conversion, and display adapted from
 * http://computervisionandjava.blogspot.com/2013/10/java-opencv-webcam.html
 */
@@ -403,7 +403,6 @@ public class EndoscopeFrame extends JFrame {
         public void run() {
             while (true) {
                 repaint();
-                counter++;
                 try { Thread.sleep(30);
                 } catch (InterruptedException e) { }
             }  
