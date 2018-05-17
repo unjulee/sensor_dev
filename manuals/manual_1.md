@@ -1,10 +1,7 @@
 # Sensor Development, Spring 2018
 #### Lois Lee, Srilekha Vangavolu, Hannah Si
-#### March 9, 2018
+#### May 17, 2018
 
-<div class="alert alert-block alert-danger">
-Please do not delete my comments. On the next submission I will use them to see if the issues were addressed and then I will delete them. If you disagree with a comment, just add your own underneath it.
-</div>
 
 ## Abstract
 <!--Summary of previous work, goals and objectives, accomplishments, and future work. -->
@@ -150,9 +147,6 @@ Label all tables with a number and then refer to them by their table number in t
    **Fabrication for the Expandable Ruler System** </br>
    As mentioned before, the Expandable Ruler System is made up of multiple 20 cm long PVC panels marked at each centimeter. Each of the panels are connected by double hinges to expand and collapse. The endoscope cable runs down the side of the panels through a series of loops which we attach to the side of the PVC panel (see Figure 2). Although we used single hinges for the prototype (see Special Components), we plan to use a double hinge in future iterations. Please refer to figure 3 for the prototype.
 
-   <div class="alert alert-block alert-danger">
-   Capitalize figure
-   </div>
 
 ## Special Components
 
@@ -202,94 +196,6 @@ void loop() {
 
 To test our sensors, we will submerge each into fluids of known solids concentration and turbidity. We will then analyze collected outputs for a relation between actual concentration and measured turbidity. It may also be necessary to test the effects of different types, particularly different colors, of sediment on the turbidity readings. However, we are not yet at the testing phase and have no experimentation details yet to report.
 
-
-## MIA Turbidity Sensor Code
-
-<div class="alert alert-block alert-danger">
-For the rest of the manual, details about MAPE come before MIA. Consider switching the order of sections here to be consistent.
-</div>
-
-This C code is to program the Arduino Uno for the MIA sensor. It uses the input from the sensor and the relation provided by the vendors and developers to determine a turbidity. (Programmed with the Arduino IDE)
-
-```arduino
-//global variables
-
-int ledPin = 13;          //declaration for LED
-int button = 11;          //digital input of the pushbutton
-int offset = 0;           //set the offset as zero for now
-int turb_input = A0;      //input in A0 from sensor
-int flag = 0;             //if flag is 1, start loop
-
-float turbidity = 0.0;    //turbidity
-int threshold = 2500;     //threshold turbidity for sludge blanket
-
-void setup() {
-
-  Serial.begin(9600);           //Baud rate: 9600
-  pinMode(ledPin, OUTPUT);      //This is to set up the LED
-  pinMode(turb_input, INPUT);   //This is to set up the turbidity input from sensor
-  pinMode(button, INPUT);       //This is to set up the input from pushbutton
-
-  //CALIBRATION
-  Serial.println('\n');
-  Serial.println("Please calibrate the sensor by pressing the button");
-
-  //PUSHBUTTON
-  if (digitalRead(button)==LOW){
-    flag = 0;
-  }
-
-  else if(digitalRead(button) == HIGH){
-    offset = analogRead(turb_input);
-    Serial.println('\n');
-    Serial.print("this is the offset value:");
-    Serial.println(offset);
-    delay(500);
-    flag = 1;
-  }
-  }
-
-void loop() {
-
- // if (flag == 1){
-    int sensorValue = analogRead(turb_input);// read the input on A0:
-
-    // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
-    float voltage = sensorValue * (5.0 / 1024.0);
-    Serial.println("____________________________________");
-    Serial.print("this is the reading from the analog:");
-    Serial.println(sensorValue); // print out the value you read:
-
-    Serial.print("this is the voltage reading:");
-    Serial.println(voltage); // print out the value you read:
-
-    // Convert voltage to turbidity
-    // relation from page is -1120.4x^2 +5742.3x-4352.9
-    // only supports voltages of 2.5-4.2 for the relation
-
-    if (voltage > 2.5 && voltage < 4.2){
-      turbidity = (voltage*voltage*(-1120.4))+(voltage*5742.3)-4352.9-(offset);
-    }
-    else if (voltage < 2.5){
-      turbidity = 3000;
-    }
-    else if (voltage > 4.2){
-      turbidity = 0;
-    }
-      Serial.print("this is the turbidity reading:");
-      Serial.println(turbidity); // print out the value you read:
-      delay(500);
-
-    //threshold value to compare to light up LED
-    if (turbidity > threshold){
-      digitalWrite(ledPin, HIGH);
-      Serial.println("YOU ARE NOW IN THE SLUDGE BLANKET");
-    }
-    else {
-      digitalWrite(ledPin, LOW);
-    }
-  }
-```
 
 ## MAPE Turbidity Sensor Code
 
@@ -380,9 +286,96 @@ Sample Output:
 </p>
 Figure 7. Above is a sample output of the program produced by exposing the camera to light and then covering it, hence the "Average Light" values that fall from near 200 to 0. (Additional code was written for printing elapsed time between calculations.) </p>
 
+## MIA Turbidity Sensor Code
+
 <div class="alert alert-block alert-danger">
-Is this MAPE?
+For the rest of the manual, details about MAPE come before MIA. Consider switching the order of sections here to be consistent.
 </div>
+
+This C code is to program the Arduino Uno for the MIA sensor. It uses the input from the sensor and the relation provided by the vendors and developers to determine a turbidity. (Programmed with the Arduino IDE)
+
+```arduino
+//global variables
+
+int ledPin = 13;          //declaration for LED
+int button = 11;          //digital input of the pushbutton
+int offset = 0;           //set the offset as zero for now
+int turb_input = A0;      //input in A0 from sensor
+int flag = 0;             //if flag is 1, start loop
+
+float turbidity = 0.0;    //turbidity
+int threshold = 2500;     //threshold turbidity for sludge blanket
+
+void setup() {
+
+  Serial.begin(9600);           //Baud rate: 9600
+  pinMode(ledPin, OUTPUT);      //This is to set up the LED
+  pinMode(turb_input, INPUT);   //This is to set up the turbidity input from sensor
+  pinMode(button, INPUT);       //This is to set up the input from pushbutton
+
+  //CALIBRATION
+  Serial.println('\n');
+  Serial.println("Please calibrate the sensor by pressing the button");
+
+  //PUSHBUTTON
+  if (digitalRead(button)==LOW){
+    flag = 0;
+  }
+
+  else if(digitalRead(button) == HIGH){
+    offset = analogRead(turb_input);
+    Serial.println('\n');
+    Serial.print("this is the offset value:");
+    Serial.println(offset);
+    delay(500);
+    flag = 1;
+  }
+  }
+
+void loop() {
+
+ // if (flag == 1){
+    int sensorValue = analogRead(turb_input);// read the input on A0:
+
+    // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
+    float voltage = sensorValue * (5.0 / 1024.0);
+    Serial.println("____________________________________");
+    Serial.print("this is the reading from the analog:");
+    Serial.println(sensorValue); // print out the value you read:
+
+    Serial.print("this is the voltage reading:");
+    Serial.println(voltage); // print out the value you read:
+
+    // Convert voltage to turbidity
+    // relation from page is -1120.4x^2 +5742.3x-4352.9
+    // only supports voltages of 2.5-4.2 for the relation
+
+    if (voltage > 2.5 && voltage < 4.2){
+      turbidity = (voltage*voltage*(-1120.4))+(voltage*5742.3)-4352.9-(offset);
+    }
+    else if (voltage < 2.5){
+      turbidity = 3000;
+    }
+    else if (voltage > 4.2){
+      turbidity = 0;
+    }
+      Serial.print("this is the turbidity reading:");
+      Serial.println(turbidity); // print out the value you read:
+      delay(500);
+
+    //threshold value to compare to light up LED
+    if (turbidity > threshold){
+      digitalWrite(ledPin, HIGH);
+      Serial.println("YOU ARE NOW IN THE SLUDGE BLANKET");
+    }
+    else {
+      digitalWrite(ledPin, LOW);
+    }
+  }
+```
+
+
+
 
 ```python
 # To convert the document from markdown to pdf
