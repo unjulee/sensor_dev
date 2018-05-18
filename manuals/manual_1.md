@@ -93,19 +93,19 @@ The microcontroller-interfaced analog sensor also encompasses three main physica
  **Variables**
  </br>
  </br><p align="center">Table 1: List of Variables Used in MAPE Sensor Fusion Drawing
-| Variables       |  Description |
+| Variables       |  Description | Value |
 |:--------------- |:----------:| -------- |
-| rec_width            | width of plate  |          |
-| rec_length          |      length of plate     |          |
-| standoff_diam           |  diameter of standoffs         |          |
-| rec_thickness      |       thickness of metal plates     |          |
-| endoscope_diam       |   diameter of endoscope        |          |
-| screw_diam       |    diameter of threads        |          |
-| disttoedge     |     distance from screw to edge of plate       |          |
-| screw_leng   |      length of threads      |          |
-| screw_poly      |   diameter of hex screw head rubber         |          |
-| chamfer |   length of chamfer at bottom of screw         |          |
-| fillet |   length of fillet beneath head of screw         |          |
+| rec_width            | width of plate  |  2 cm        |
+| rec_length          |      length of plate     |   3.5 cm       |
+| standoff_diam           |  diameter of standoffs         | .7 cm         |
+| rec_thickness      |       thickness of metal plates     |  3 cm       |
+| endoscope_diam       |   diameter of endoscope        |  5/16 in        |
+| screw_diam       |    diameter of threads        |  5/32 in        |
+| disttoedge     |     distance from screw to edge of plate       |    .05 cm      |
+| screw_leng   |      length of threads      |   .6 cm       |
+| screw_poly      |   diameter of hex screw head rubber         |  .7 cm        |
+| chamfer |   length of chamfer at bottom of screw         |   .6 cm       |
+| fillet |   length of fillet beneath head of screw         |   .6 cm       |
 
 <br/>
 
