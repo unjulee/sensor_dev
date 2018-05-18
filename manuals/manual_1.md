@@ -208,8 +208,8 @@ public class EndoscopeFrame extends JFrame {
         contentPane.setLayout(null);
 
         videoCap = new VideoCap(1);
-        //use argument of 0 or nothing for default camera (for a computer, the webcam)
-        //use argument of 1 or higher for additional cameras (e.g. the USB endoscope camera)
+        //0 or nothing for default camera (for a computer, the webcam)
+        //1 or higher for additional cameras (e.g. the USB endoscope camera)
 
         new MyThread().start();
     }
@@ -219,7 +219,7 @@ public class EndoscopeFrame extends JFrame {
         g.drawImage(videoCap.getOneImgFrame(), 0, 0, this);
 
         if (counter % 10 == 0)
-			    System.out.println("Average Light: " + averageLight(videoCap.mat2Img.mat, 10));
+          System.out.println("Average Light: " + averageLight(videoCap.mat2Img.mat, 10));
     }
 
     public static int averageLight(Mat mat, int spacing) {
