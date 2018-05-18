@@ -85,9 +85,9 @@ The microcontroller-interfaced analog sensor also encompasses three main physica
 
    <p align="center">
    <!-- <img src="/drawings/MAPE_extension.png" height=300>-->
-   <img src="/drawings/MAPE v6.png" height=250> </br>
+   <img src="/drawings/Endo v10.png" height=250> </br>
    </p>
-   Figure 5. The extension for the MAPE turbidity sensor consists of a metal collar secured to the endoscope by a set screw. From the collar, three prongs extend out to hold the non-reflective material in front of the camera lens. Find the Fusion 360&trade; file for the extension <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/MAPE%20v8.f3d"> here</a>. </br>
+   Figure 5. The extension includes two rectangular plates, one attached to the endoscope body, and the other extending off the endoscope and holding the non-reflective material in front of the camera lens. The two plates are screwed to and connected by two standoffs. Find the Fusion 360&trade; file for the extension <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/Endo%20v9.iges"> here</a>. </br>
    </br>
 
  **Variables**
