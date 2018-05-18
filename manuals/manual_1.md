@@ -26,8 +26,9 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    An endoscope is a type of borescope, an optical instrument that is typically slender, illuminated by built in lights, and attached to a long cable, making it suitable for viewing inside otherwise inaccessible places. An endoscope specifically was chosen for this turbidity sensor for its small size, accuracy, water resistance, and device compatibility. <br/>
 
    <p align="center">
-   <img src="/images/Depstech_endoscope.jpg" height=300> </br>
+   <img src="https://raw.githubusercontent.com/AguaClara/sensor_dev/master/images/Depstech_endoscope.jpg" height=300> </br>
    </p>
+
    Figure 1. This endoscope purchased from Depstech&reg; features a 5 meter-long semirigid cable, a 2.0 MP camera ringed with adjustable LED lights, and a type-c USB end with complementary USB and micro-USB extensions. See <strong> Special Components </strong> for more details.</br>
    </br>
 
@@ -40,12 +41,12 @@ The mobile application-processed endoscope turbidity sensor encompasses three ma
    Thus, the user may lower the system panel by panel until the endoscope has reached the sludge blanket. The height of the sludge blanket would equal the depth of the endoscope (measured by the panel markings) subtracted from the total height of the sedimentation tank. The advantages of this expandable system are its collapsibility, making it ideal for transport, and the rigid backing it provides so that the endoscope wire, which is semi-rigid, remains perpendicular to the bottom of the tank, ensuring an accurate height reading.
 
    <p align="center">
-   <img src="/images/rulersystem_cropped.png" width=400>
+   <img src="https://raw.githubusercontent.com/AguaClara/sensor_dev/master/images/rulersystem_cropped.png" width=400>
    </p>
    Figure 2. The expandable ruler system consists of multiple marked panels connected by hinges end-to-end. (Only a portion of the entire system is shown.) The endoscope cable runs down the side of the panels through a series of loops. </p>
 
    <p align="center">
-   <img src="/images/ruler_example.png" height=160>
+   <img src="https://raw.githubusercontent.com/AguaClara/sensor_dev/master/images/ruler_example.png" height=160>
    </p>
    Figure 3. Above is a prototype of the expandable ruler system, constructed with two PVC panels, plastic loops, and plastic hinges. The prototype is able to collapse (left) for compact storage and also expand (right) to provide a straight, rigid backing for the endoscope cord when hung vertically. </br>
    </br>
@@ -85,7 +86,7 @@ The microcontroller-interfaced analog sensor also encompasses three main physica
 
    <p align="center">
    <!-- <img src="/drawings/MAPE_extension.png" height=300>-->
-   <img src="/drawings/Endo v10.png" height=250> </br>
+   <img src="https://raw.githubusercontent.com/AguaClara/sensor_dev/master/drawings/Endo v10.png" height=250> </br>
    </p>
    Figure 5. The extension includes two rectangular plates, one attached to the endoscope body, and the other extending off the endoscope and holding the non-reflective material in front of the camera lens. The two plates are screwed to and connected by two standoffs. Find the Fusion 360&trade; file for the extension <a href="https://github.com/AguaClara/sensor_dev/blob/master/drawings/Endo%20v9.iges"> here</a>. </br>
    </br>
@@ -253,7 +254,7 @@ public class EndoscopeFrame extends JFrame {
 
 Sample Output:
 <p align="center">
-<img src="/images/endoscope_code_output.png" height=350>
+<img src="https://raw.githubusercontent.com/AguaClara/sensor_dev/master/images/endoscope_code_output.png" height=350>
 </p>
 Figure 7. Above is a sample output of the program for the MAPE turbidity sensor produced by exposing the camera to light and then quickly covering it. Hence, the "Average Light" values that fall from near 200 to 0. Additional code was written for printing elapsed time between calculations. </p>
 
@@ -348,7 +349,7 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
 }
 ```
 <p align="center">
-<img src="/images/MAPE_app_screenshot.png" width=200>
+<img src="https://raw.githubusercontent.com/AguaClara/sensor_dev/master/images/MAPE_app_screenshot.png" width=200>
 <p/>
 Figure 8. This is a screenshot of the mobile Android application for the MAPE turbidity sensor. The camera feedback is from the phone's rear camera, as the application is not yet able to access an external camera such as the endoscope. The user may adjust the exposure level, though between adjustments the exposure is held constant.
 
@@ -436,7 +437,7 @@ void loop() {
   }
 ```
 
-```python
+<!-- ```python
 # To convert the document from markdown to pdf
 pandoc manual_1.md -o Sensor_Development_Research_Report.pdf
-```
+``` -->
