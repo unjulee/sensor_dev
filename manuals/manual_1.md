@@ -91,25 +91,23 @@ The microcontroller-interfaced analog sensor also encompasses three main physica
    </br>
 
  **Variables**
- <br/>
+ </br>
+ </br><p align="center">Table 1: List of Variables Used in MAPE Sensor Fusion Drawing
 | Variables       |  Description |
 |:--------------- |:----------:| -------- |
-| diam            | inner diameter |          |
-| length          |      length of cylinder     |          |
-| width           |  width of collar          |          |
-| screwdiam       |       diameter of hex screw     |          |
-| screwdist       |   distance between screws         |          |
-| screwhead       |    diameter of hex screw head        |          |
-| thread_diam     |     diameter of threads       |          |
-| thread_length   |      length of threads      |          |
-| RubberDist      |   distance from end of collar to rubber         |          |
-| RubberThickness |   thickness of black matte material         |          |
-| screwdisttoedge |   distance from screw to edge of collar         |          |
+| rec_width            | width of plate  |          |
+| rec_length          |      length of plate     |          |
+| standoff_diam           |  diameter of standoffs         |          |
+| rec_thickness      |       thickness of metal plates     |          |
+| endoscope_diam       |   diameter of endoscope        |          |
+| screw_diam       |    diameter of threads        |          |
+| disttoedge     |     distance from screw to edge of plate       |          |
+| screw_leng   |      length of threads      |          |
+| screw_poly      |   diameter of hex screw head rubber         |          |
+| chamfer |   length of chamfer at bottom of screw         |          |
+| fillet |   length of fillet beneath head of screw         |          |
 
 <br/>
-<div class="alert alert-block alert-danger">
-Label all tables with a number and then refer to them by their table number in the report text.
-</div>
 
 <br/>
 
