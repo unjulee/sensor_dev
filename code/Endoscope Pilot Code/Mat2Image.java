@@ -1,13 +1,18 @@
+/** AguaClara Sensor Development Spring 2018
+ * Mobile Application-Processed Endoscope Turbidity Sensor
+ * 
+ * Framework for video frame capture, conversion, and display adapted from 
+ * http://computervisionandjava.blogspot.com/2013/10/java-opencv-webcam.html */
+
 import java.awt.image.BufferedImage;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
-import org.opencv.highgui.Highgui;
 import org.opencv.imgproc.Imgproc;
 
 public class Mat2Image {
-	Mat mat = new Mat(); // These fields might be unnecessary.
-    BufferedImage img;	// I think this class works more logically with static methods,
-    byte[] dat;			// but perhaps the original way works faster
+	Mat mat = new Mat();
+    BufferedImage img;
+    byte[] dat;
     
     static{
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
@@ -19,6 +24,7 @@ public class Mat2Image {
     public Mat2Image(Mat mat) {
         getSpace(mat);
     }
+    
     
     public void getSpace(Mat mat) {
         this.mat = mat;
@@ -35,12 +41,13 @@ public class Mat2Image {
     }
     
     public BufferedImage getImage(Mat mat){
-            getSpace(mat);
-            mat.get(0, 0, dat);
-            img.getRaster().setDataElements(0, 0, mat.cols(), mat.rows(), dat);
+        getSpace(mat);
+        mat.get(0, 0, dat);
+        img.getRaster().setDataElements(0, 0, mat.cols(), mat.rows(), dat);
         return img;
     }
  
+    /** A static version of getImage(Mat mat). More concise, but currently unused because may be slower. */
     public static BufferedImage getImageStatic(Mat mat) {
     		Imgproc.cvtColor(mat,mat,Imgproc.COLOR_RGB2BGR); //corrects red and blue channels
 
