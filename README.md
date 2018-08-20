@@ -15,4 +15,7 @@ The sensor development team's repo.
 ## Links to Reports and Presentations
 
 [Midterm Symposium Spring 2018](https://docs.google.com/presentation/d/1DQyx87q7LtW5yOaPytrrnAvyGNLM-DLOTYY6XjQVZQw/edit?usp=sharing)
+
 [Final Symposium Spring 2018](https://docs.google.com/presentation/d/1z8MEi4Bpe6GwdDxDbs89RpllG_0ilBI8o5UYnoSLq9U/edit#slide=id.g1111d7c42e_0_81)
+
+[Final Manual](https://github.com/AguaClara/sensor_dev/blob/master/manuals/manual_1.md)
